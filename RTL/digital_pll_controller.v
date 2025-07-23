@@ -46,7 +46,7 @@
 //    is equal to div, the the trim code does not change.
 //
 
-module digital_pll_controller(reset, clock, osc, div, trim);
+module pll_controller(reset, clock, osc, div, trim);
     input reset;
     input clock;
     input osc;
