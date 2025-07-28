@@ -17,7 +17,12 @@
 // Digital PLL (ring oscillator + controller)
 // Technically this is a frequency locked loop, not a phase locked loop.
 
-module pll(
+`ifndef SIM
+`include "digital_pll_controller.v"
+`include "ring_osc2x13.v"
+`endif
+
+module digital_pll(
 `ifdef USE_POWER_PINS
     VDD,
     VSS,

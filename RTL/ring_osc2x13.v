@@ -158,7 +158,7 @@ endmodule
 // Frequency of this ring oscillator under SPICE simulations at
 // nominal PVT is maximum 214 MHz (trim 0), minimum 90 MHz (trim 24).
 
-module ring_osc(reset, trim, clockp);
+module ring_osc2x13(reset, trim, clockp);
     input reset;
     input [25:0] trim;
     output[1:0] clockp;
