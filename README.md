@@ -3,11 +3,11 @@ In the original repository of OpenROAD-flow-scripts, the scripts are configured 
 First, navigate to OpenROAD-flow-scripts/flow/platforms/gf180/, then change the track setting from 9 to 7 in the following three files: cells_adders.v, cells_latch.v, and config.mk.
 You should also update the corner settings in config.mk as follows:
 
-BC_LIB_FILES → ff_n40C_3v60.lib.gz
+`BC_LIB_FILES → ff_n40C_3v60.lib.gz`
 
-WC_LIB_FILES → ss_125C_3v00.lib.gz
+`WC_LIB_FILES → ss_125C_3v00.lib.gz`
 
-TC_LIB_FILES → tt_025C_3v30.lib.gz
+`TC_LIB_FILES → tt_025C_3v30.lib.gz`
 
 Finally, don’t forget to update TC_TEMPERATURE and TC_VOLTAGE according to the corresponding corner values above.
 
@@ -52,4 +52,5 @@ make
 cd $PROJECT_ROOT/openroad
 make
 ```
+
 
