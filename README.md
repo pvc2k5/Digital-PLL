@@ -10,7 +10,33 @@ You should also update the corner settings in config.mk as follows:
 `TC_LIB_FILES → tt_025C_3v30.lib.gz`
 
 Finally, don’t forget to update TC_TEMPERATURE and TC_VOLTAGE according to the corresponding corner values above.
+## Setup environment 
+**Create the Conda environment with Python 3.12:**
+install py312 and tool by using this command
 
+```bash
+conda create -n py312 python=3.12 -y
+conda activate py312
+conda install -c conda-forge yosys klayout verilator
+```
+Then, go to the project directory:
+```bash
+cd Digital-PLL/openroad/
+```
+activate the environment
+```bash
+source env.sh
+```
+Using openroad flow scripts gui to view GDS 
+```bash
+cd Digital-PLL/openroad/
+make gui
+```
+using Klayout to view GDS:
+```bash
+cd /Digital-PLL/openroad/results/gf180/pll/base
+klayout 6_final.gds
+```
 ## Tool setup
 To use the project, you need to install `iverilog`, `openroad`,
 `yosys` and `gf180mcuc` pdk for simulation and evaluation. You can use
@@ -52,5 +78,6 @@ make
 cd $PROJECT_ROOT/openroad
 make
 ```
+
 
 
