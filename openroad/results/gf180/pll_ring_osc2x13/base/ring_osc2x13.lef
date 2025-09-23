@@ -1,0 +1,838 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+UNITS
+    DATABASE MICRONS 2000 ;
+END UNITS
+
+VIA ring_osc2x13_via1_2_8960_1800_1_4_1240_1240
+  VIARULE Via1_GEN_HH ;
+  CUTSIZE 0.26 0.26 ;
+  LAYERS Metal1 Via1 Metal2 ;
+  CUTSPACING 0.36 0.36 ;
+  ENCLOSURE 0.06 0.32 0.01 0.06 ;
+  ROWCOL 1 4 ;
+END ring_osc2x13_via1_2_8960_1800_1_4_1240_1240
+
+VIA ring_osc2x13_via2_3_8960_560_1_8_1040_1040
+  VIARULE Via2_GEN_HH ;
+  CUTSIZE 0.26 0.26 ;
+  LAYERS Metal2 Via2 Metal3 ;
+  CUTSPACING 0.26 0.26 ;
+  ENCLOSURE 0.01 0.06 0.06 0.01 ;
+  ROWCOL 1 8 ;
+END ring_osc2x13_via2_3_8960_560_1_8_1040_1040
+
+VIA ring_osc2x13_via3_4_8960_560_1_8_1040_1040
+  VIARULE Via3_GEN_HH ;
+  CUTSIZE 0.26 0.26 ;
+  LAYERS Metal3 Via3 Metal4 ;
+  CUTSPACING 0.26 0.26 ;
+  ENCLOSURE 0.06 0.01 0.29 0.06 ;
+  ROWCOL 1 8 ;
+END ring_osc2x13_via3_4_8960_560_1_8_1040_1040
+
+MACRO ring_osc2x13
+  FOREIGN ring_osc2x13 0 0 ;
+  CLASS BLOCK ;
+  SIZE 125.96 BY 125.96 ;
+  PIN VDD
+    USE POWER ;
+    DIRECTION INOUT ;
+    PORT
+      LAYER Metal4 ;
+        RECT  117.04 7.39 121.52 118.05 ;
+        RECT  72.24 7.39 76.72 118.05 ;
+        RECT  27.44 7.39 31.92 118.05 ;
+      LAYER Metal1 ;
+        RECT  2.24 117.15 123.76 118.05 ;
+        RECT  2.24 109.31 123.76 110.21 ;
+        RECT  2.24 101.47 123.76 102.37 ;
+        RECT  2.24 93.63 123.76 94.53 ;
+        RECT  2.24 85.79 123.76 86.69 ;
+        RECT  2.24 77.95 123.76 78.85 ;
+        RECT  2.24 70.11 123.76 71.01 ;
+        RECT  2.24 62.27 123.76 63.17 ;
+        RECT  2.24 54.43 123.76 55.33 ;
+        RECT  2.24 46.59 123.76 47.49 ;
+        RECT  2.24 38.75 123.76 39.65 ;
+        RECT  2.24 30.91 123.76 31.81 ;
+        RECT  2.24 23.07 123.76 23.97 ;
+        RECT  2.24 15.23 123.76 16.13 ;
+        RECT  2.24 7.39 123.76 8.29 ;
+      VIA 119.28 117.6 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 117.6 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 117.6 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 109.76 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 109.76 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 109.76 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 101.92 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 101.92 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 101.92 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 94.08 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 94.08 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 94.08 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 86.24 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 86.24 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 86.24 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 78.4 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 78.4 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 78.4 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 70.56 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 70.56 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 70.56 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 62.72 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 62.72 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 62.72 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 54.88 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 54.88 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 54.88 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 47.04 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 47.04 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 47.04 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 39.2 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 39.2 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 39.2 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 31.36 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 31.36 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 31.36 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 23.52 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 23.52 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 23.52 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 15.68 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 15.68 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 15.68 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 119.28 7.84 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 119.28 7.84 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 119.28 7.84 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 117.6 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 117.6 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 117.6 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 109.76 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 109.76 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 109.76 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 101.92 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 101.92 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 101.92 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 94.08 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 94.08 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 94.08 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 86.24 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 86.24 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 86.24 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 78.4 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 78.4 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 78.4 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 70.56 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 70.56 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 70.56 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 62.72 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 62.72 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 62.72 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 54.88 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 54.88 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 54.88 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 47.04 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 47.04 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 47.04 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 39.2 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 39.2 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 39.2 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 31.36 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 31.36 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 31.36 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 23.52 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 23.52 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 23.52 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 15.68 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 15.68 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 15.68 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 74.48 7.84 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 74.48 7.84 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 74.48 7.84 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 117.6 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 117.6 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 117.6 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 109.76 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 109.76 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 109.76 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 101.92 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 101.92 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 101.92 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 94.08 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 94.08 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 94.08 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 86.24 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 86.24 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 86.24 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 78.4 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 78.4 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 78.4 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 70.56 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 70.56 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 70.56 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 62.72 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 62.72 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 62.72 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 54.88 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 54.88 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 54.88 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 47.04 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 47.04 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 47.04 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 39.2 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 39.2 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 39.2 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 31.36 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 31.36 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 31.36 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 23.52 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 23.52 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 23.52 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 15.68 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 15.68 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 15.68 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 29.68 7.84 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 29.68 7.84 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 29.68 7.84 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+    END
+  END VDD
+  PIN VSS
+    USE GROUND ;
+    DIRECTION INOUT ;
+    PORT
+      LAYER Metal4 ;
+        RECT  112 3.47 116.48 121.97 ;
+        RECT  67.2 3.47 71.68 121.97 ;
+        RECT  22.4 3.47 26.88 121.97 ;
+      LAYER Metal1 ;
+        RECT  2.24 121.07 123.76 121.97 ;
+        RECT  2.24 113.23 123.76 114.13 ;
+        RECT  2.24 105.39 123.76 106.29 ;
+        RECT  2.24 97.55 123.76 98.45 ;
+        RECT  2.24 89.71 123.76 90.61 ;
+        RECT  2.24 81.87 123.76 82.77 ;
+        RECT  2.24 74.03 123.76 74.93 ;
+        RECT  2.24 66.19 123.76 67.09 ;
+        RECT  2.24 58.35 123.76 59.25 ;
+        RECT  2.24 50.51 123.76 51.41 ;
+        RECT  2.24 42.67 123.76 43.57 ;
+        RECT  2.24 34.83 123.76 35.73 ;
+        RECT  2.24 26.99 123.76 27.89 ;
+        RECT  2.24 19.15 123.76 20.05 ;
+        RECT  2.24 11.31 123.76 12.21 ;
+        RECT  2.24 3.47 123.76 4.37 ;
+      VIA 114.24 121.52 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 121.52 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 121.52 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 113.68 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 113.68 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 113.68 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 105.84 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 105.84 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 105.84 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 98 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 98 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 98 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 90.16 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 90.16 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 90.16 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 82.32 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 82.32 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 82.32 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 74.48 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 74.48 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 74.48 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 66.64 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 66.64 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 66.64 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 58.8 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 58.8 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 58.8 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 50.96 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 50.96 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 50.96 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 43.12 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 43.12 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 43.12 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 35.28 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 35.28 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 35.28 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 27.44 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 27.44 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 27.44 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 19.6 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 19.6 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 19.6 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 11.76 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 11.76 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 11.76 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 114.24 3.92 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 114.24 3.92 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 114.24 3.92 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 121.52 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 121.52 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 121.52 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 113.68 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 113.68 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 113.68 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 105.84 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 105.84 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 105.84 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 98 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 98 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 98 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 90.16 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 90.16 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 90.16 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 82.32 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 82.32 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 82.32 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 74.48 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 74.48 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 74.48 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 66.64 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 66.64 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 66.64 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 58.8 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 58.8 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 58.8 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 50.96 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 50.96 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 50.96 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 43.12 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 43.12 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 43.12 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 35.28 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 35.28 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 35.28 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 27.44 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 27.44 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 27.44 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 19.6 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 19.6 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 19.6 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 11.76 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 11.76 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 11.76 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 69.44 3.92 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 69.44 3.92 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 69.44 3.92 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 121.52 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 121.52 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 121.52 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 113.68 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 113.68 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 113.68 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 105.84 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 105.84 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 105.84 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 98 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 98 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 98 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 90.16 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 90.16 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 90.16 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 82.32 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 82.32 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 82.32 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 74.48 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 74.48 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 74.48 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 66.64 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 66.64 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 66.64 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 58.8 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 58.8 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 58.8 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 50.96 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 50.96 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 50.96 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 43.12 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 43.12 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 43.12 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 35.28 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 35.28 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 35.28 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 27.44 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 27.44 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 27.44 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 19.6 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 19.6 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 19.6 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 11.76 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 11.76 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 11.76 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+      VIA 24.64 3.92 ring_osc2x13_via3_4_8960_560_1_8_1040_1040 ;
+      VIA 24.64 3.92 ring_osc2x13_via2_3_8960_560_1_8_1040_1040 ;
+      VIA 24.64 3.92 ring_osc2x13_via1_2_8960_1800_1_4_1240_1240 ;
+    END
+  END VSS
+  PIN clockp[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  84.42 125.44 84.7 125.96 ;
+    END
+  END clockp[0]
+  PIN clockp[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  63.14 125.44 63.42 125.96 ;
+    END
+  END clockp[1]
+  PIN dco
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  123.62 125.44 123.9 125.96 ;
+    END
+  END dco
+  PIN enable
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  122.5 125.44 122.78 125.96 ;
+    END
+  END enable
+  PIN ext_trim[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  121.38 125.44 121.66 125.96 ;
+    END
+  END ext_trim[0]
+  PIN ext_trim[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  120.26 125.44 120.54 125.96 ;
+    END
+  END ext_trim[10]
+  PIN ext_trim[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  119.14 125.44 119.42 125.96 ;
+    END
+  END ext_trim[11]
+  PIN ext_trim[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  118.02 125.44 118.3 125.96 ;
+    END
+  END ext_trim[12]
+  PIN ext_trim[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  116.9 125.44 117.18 125.96 ;
+    END
+  END ext_trim[13]
+  PIN ext_trim[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  115.78 125.44 116.06 125.96 ;
+    END
+  END ext_trim[14]
+  PIN ext_trim[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  114.66 125.44 114.94 125.96 ;
+    END
+  END ext_trim[15]
+  PIN ext_trim[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  113.54 125.44 113.82 125.96 ;
+    END
+  END ext_trim[16]
+  PIN ext_trim[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  112.42 125.44 112.7 125.96 ;
+    END
+  END ext_trim[17]
+  PIN ext_trim[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  111.3 125.44 111.58 125.96 ;
+    END
+  END ext_trim[18]
+  PIN ext_trim[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  110.18 125.44 110.46 125.96 ;
+    END
+  END ext_trim[19]
+  PIN ext_trim[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  109.06 125.44 109.34 125.96 ;
+    END
+  END ext_trim[1]
+  PIN ext_trim[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  107.94 125.44 108.22 125.96 ;
+    END
+  END ext_trim[20]
+  PIN ext_trim[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  106.82 125.44 107.1 125.96 ;
+    END
+  END ext_trim[21]
+  PIN ext_trim[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  105.7 125.44 105.98 125.96 ;
+    END
+  END ext_trim[22]
+  PIN ext_trim[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  104.58 125.44 104.86 125.96 ;
+    END
+  END ext_trim[23]
+  PIN ext_trim[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  103.46 125.44 103.74 125.96 ;
+    END
+  END ext_trim[24]
+  PIN ext_trim[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  102.34 125.44 102.62 125.96 ;
+    END
+  END ext_trim[25]
+  PIN ext_trim[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  101.22 125.44 101.5 125.96 ;
+    END
+  END ext_trim[2]
+  PIN ext_trim[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  100.1 125.44 100.38 125.96 ;
+    END
+  END ext_trim[3]
+  PIN ext_trim[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  98.98 125.44 99.26 125.96 ;
+    END
+  END ext_trim[4]
+  PIN ext_trim[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  97.86 125.44 98.14 125.96 ;
+    END
+  END ext_trim[5]
+  PIN ext_trim[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  96.74 125.44 97.02 125.96 ;
+    END
+  END ext_trim[6]
+  PIN ext_trim[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  95.62 125.44 95.9 125.96 ;
+    END
+  END ext_trim[7]
+  PIN ext_trim[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  94.5 125.44 94.78 125.96 ;
+    END
+  END ext_trim[8]
+  PIN ext_trim[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  93.38 125.44 93.66 125.96 ;
+    END
+  END ext_trim[9]
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  92.26 125.44 92.54 125.96 ;
+    END
+  END reset
+  PIN trim[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  69.86 125.44 70.14 125.96 ;
+    END
+  END trim[0]
+  PIN trim[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  85.54 125.44 85.82 125.96 ;
+    END
+  END trim[10]
+  PIN trim[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  67.62 125.44 67.9 125.96 ;
+    END
+  END trim[11]
+  PIN trim[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  64.26 125.44 64.54 125.96 ;
+    END
+  END trim[12]
+  PIN trim[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  62.02 125.44 62.3 125.96 ;
+    END
+  END trim[13]
+  PIN trim[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  88.9 125.44 89.18 125.96 ;
+    END
+  END trim[14]
+  PIN trim[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  60.9 125.44 61.18 125.96 ;
+    END
+  END trim[15]
+  PIN trim[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  36.26 125.44 36.54 125.96 ;
+    END
+  END trim[16]
+  PIN trim[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  47.46 125.44 47.74 125.96 ;
+    END
+  END trim[17]
+  PIN trim[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  45.22 125.44 45.5 125.96 ;
+    END
+  END trim[18]
+  PIN trim[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  27.3 125.44 27.58 125.96 ;
+    END
+  END trim[19]
+  PIN trim[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  79.94 125.44 80.22 125.96 ;
+    END
+  END trim[1]
+  PIN trim[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  50.82 125.44 51.1 125.96 ;
+    END
+  END trim[20]
+  PIN trim[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  41.86 125.44 42.14 125.96 ;
+    END
+  END trim[21]
+  PIN trim[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  76.58 125.44 76.86 125.96 ;
+    END
+  END trim[22]
+  PIN trim[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  90.02 125.44 90.3 125.96 ;
+    END
+  END trim[23]
+  PIN trim[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  66.5 125.44 66.78 125.96 ;
+    END
+  END trim[24]
+  PIN trim[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  75.46 125.44 75.74 125.96 ;
+    END
+  END trim[25]
+  PIN trim[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  53.06 125.44 53.34 125.96 ;
+    END
+  END trim[2]
+  PIN trim[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  35.14 125.44 35.42 125.96 ;
+    END
+  END trim[3]
+  PIN trim[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  46.34 125.44 46.62 125.96 ;
+    END
+  END trim[4]
+  PIN trim[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  44.1 125.44 44.38 125.96 ;
+    END
+  END trim[5]
+  PIN trim[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  30.66 125.44 30.94 125.96 ;
+    END
+  END trim[6]
+  PIN trim[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  51.94 125.44 52.22 125.96 ;
+    END
+  END trim[7]
+  PIN trim[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  57.54 125.44 57.82 125.96 ;
+    END
+  END trim[8]
+  PIN trim[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal4 ;
+        RECT  73.22 125.44 73.5 125.96 ;
+    END
+  END trim[9]
+  OBS
+    LAYER Metal1 ;
+     RECT  2.24 3.47 123.9 125.96 ;
+    LAYER Metal2 ;
+     RECT  2.24 3.47 123.9 125.96 ;
+    LAYER Metal3 ;
+     RECT  2.24 3.47 123.9 125.96 ;
+    LAYER Metal4 ;
+     RECT  2.24 3.47 123.9 125.96 ;
+  END
+END ring_osc2x13
+END LIBRARY

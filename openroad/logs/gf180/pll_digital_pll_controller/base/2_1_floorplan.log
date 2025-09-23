@@ -1,0 +1,49 @@
+OpenROAD 9f7714859944860f802c7c961ba83ab4ae83849f 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0227] LEF file: /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lef/gf180mcu_5LM_1TM_9K_7t_tech.lef, created 13 layers, 60 vias
+[INFO ODB-0227] LEF file: /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lef/gf180mcu_5LM_1TM_9K_7t_sc.lef, created 229 library cells
+link_design digital_pll_controller
+
+==========================================================================
+Floorplan check_setup
+--------------------------------------------------------------------------
+Warning: There are 9 input ports missing set_input_delay.
+Warning: There are 26 output ports missing set_output_delay.
+Warning: There are 27 unconstrained endpoints.
+number instances in verilog is 183
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.240, 3.920).
+[INFO IFP-0001] Added 40 rows of 283 site GF018hv5v_mcu_sc7.
+source /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/fastroute.tcl
+Repair tie lo fanout...
+Repair tie hi fanout...
+repair_timing -setup -verbose -setup_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp
+[WARNING EST-0027] no estimated parasitics. Using wire load models.
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove 
+[INFO RSZ-0098] No setup violations found
+Default units for flow
+ time 1ns
+ capacitance 1pF
+ resistance 1ohm
+ voltage 1v
+ current 1mA
+ power 1uW
+ distance 1um
+Report metrics stage 2, floorplan final...
+
+==========================================================================
+floorplan final report_design_area
+--------------------------------------------------------------------------
+Design area 6305 u^2 25% utilization.
+source /home/pvc/openroad/Digital-PLL/openroad/digital_pll/digital_pll_controller/io.tcl
+Elapsed time: 0:00.94[h:]min:sec. CPU time: user 0.70 sys 0.38 (115%). Peak memory: 146860KB.
+Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+2_1_floorplan                      0            143 29263769acf82ddedfb7

@@ -1,0 +1,12 @@
+violation type: Horizontal congestion
+	srcs: net:ext_trim[21] net:ext_trim[22] net:net9 net:net11 net:net13 net:net15 net:net16 net:net20 net:net21 net:net22 net:net24 net:net28 net:net30 net:net31 net:net33
+	comment: capacity:14 usage:15 overflow:1
+	bbox = (142.8000, 470.4000) - (151.2000, 478.8000) on Layer -
+violation type: Horizontal congestion
+	srcs: net:ext_trim[25]
+	comment: capacity:0 usage:1 overflow:1
+	bbox = (142.8000, 453.6000) - (151.2000, 462.0000) on Layer -
+violation type: Vertical congestion
+	srcs: net:ext_trim[25]
+	comment: capacity:0 usage:1 overflow:1
+	bbox = (142.8000, 453.6000) - (151.2000, 462.0000) on Layer -

@@ -1,0 +1,157 @@
+{
+  "creator": "Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)",
+  "modules": {
+    "digital_pll": {
+      "attributes": {
+        "keep_hierarchy": "00000000000000000000000000000001",
+        "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:20.1-62.10",
+        "top": "00000000000000000000000000000001",
+        "hdlname": "digital_pll"
+      },
+      "ports": {
+        "resetb": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "enable": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "osc": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "clockp": {
+          "direction": "output",
+          "bits": [ 5, 6 ]
+        },
+        "div": {
+          "direction": "input",
+          "bits": [ 7, 8, 9, 10, 11 ]
+        },
+        "dco": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "ext_trim": {
+          "direction": "input",
+          "bits": [ 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ]
+        }
+      },
+      "cells": {
+        "pll_control": {
+          "hide_name": 0,
+          "type": "digital_pll_controller",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:52.28-60.6"
+          },
+          "port_directions": {
+            "clock": "input",
+            "dco": "input",
+            "div": "input",
+            "enable": "input",
+            "osc": "input",
+            "reset": "input",
+            "trim": "output"
+          },
+          "connections": {
+            "clock": [ 5 ],
+            "dco": [ 12 ],
+            "div": [ 7, 8, 9, 10, 11 ],
+            "enable": [ 3 ],
+            "osc": [ 4 ],
+            "reset": [ 2 ],
+            "trim": [ 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 ]
+          }
+        },
+        "ringosc": {
+          "hide_name": 0,
+          "type": "ring_osc2x13",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:43.18-50.6"
+          },
+          "port_directions": {
+            "clockp": "output",
+            "dco": "input",
+            "enable": "input",
+            "ext_trim": "input",
+            "reset": "input",
+            "trim": "input"
+          },
+          "connections": {
+            "clockp": [ 5, 6 ],
+            "dco": [ 12 ],
+            "enable": [ 3 ],
+            "ext_trim": [ 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ],
+            "reset": [ 2 ],
+            "trim": [ 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 ]
+          }
+        }
+      },
+      "netnames": {
+        "clockp": {
+          "hide_name": 0,
+          "bits": [ 5, 6 ],
+          "attributes": {
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:39.18-39.24"
+          }
+        },
+        "dco": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:36.13-36.16"
+          }
+        },
+        "div": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11 ],
+          "attributes": {
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:35.18-35.21"
+          }
+        },
+        "enable": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:33.12-33.18"
+          }
+        },
+        "ext_trim": {
+          "hide_name": 0,
+          "bits": [ 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ],
+          "attributes": {
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:37.18-37.26"
+          }
+        },
+        "osc": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:34.12-34.15"
+          }
+        },
+        "otrim": {
+          "hide_name": 0,
+          "bits": [ 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64 ],
+          "attributes": {
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:41.17-41.22"
+          }
+        },
+        "resetb": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:32.12-32.18"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+OpenROAD 9f7714859944860f802c7c961ba83ab4ae83849f 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
+read_db ./results/gf180/pll_ring_osc2x13/base/5_route.odb
+exec cp ./results/gf180/pll_ring_osc2x13/base/5_route.odb ./results/gf180/pll_ring_osc2x13/base/6_1_fill.odb
+Elapsed time: 0:00.59[h:]min:sec. CPU time: user 0.57 sys 0.06 (108%). Peak memory: 124184KB.
+Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+6_1_fill                           0            121 d794172cbb829a713cd1

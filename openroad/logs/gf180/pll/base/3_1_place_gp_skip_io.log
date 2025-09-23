@@ -1,0 +1,32 @@
+OpenROAD 9f7714859944860f802c7c961ba83ab4ae83849f 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
+read_liberty ./results/gf180/pll_digital_pll_controller/base/digital_pll_controller_typ.lib
+read_liberty ./results/gf180/pll_ring_osc2x13/base/ring_osc2x13_typ.lib
+read_db ./results/gf180/pll/base/2_floorplan.odb
+global_placement -skip_io -density "0.55 " -pad_left 0 -pad_right 0
+[INFO GPL-0005] Execute conjugate gradient initial placement.
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: (  0.560  3.920 ) um
+[INFO GPL-0004] CoreBBox: ( 10.080 11.760 ) ( 490.000 490.000 ) um
+[INFO GPL-0006] Number of instances:               360
+[INFO GPL-0007] Movable instances:                   0
+[INFO GPL-0008] Fixed instances:                   184
+[INFO GPL-0009] Dummy instances:                   176
+[INFO GPL-0010] Number of nets:                     63
+[INFO GPL-0011] Number of pins:                     93
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 500.000 500.000 ) um
+[INFO GPL-0013] Core BBox: ( 10.080 11.760 ) ( 490.000 490.000 ) um
+[INFO GPL-0016] Core area:                  229516.941 um^2
+[INFO GPL-0017] Fixed instances area:        70130.054 um^2
+[INFO GPL-0018] Movable instances area:          0.000 um^2
+[INFO GPL-0019] Utilization:                     0.000 %
+[INFO GPL-0020] Standard cells area:             0.000 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[WARNING GPL-0136] No placeable instances - skipping placement.
+Elapsed time: 0:00.59[h:]min:sec. CPU time: user 0.62 sys 0.02 (108%). Peak memory: 125284KB.
+Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+3_1_place_gp_skip_io               0            122 9b59eb314e9d540f63c8

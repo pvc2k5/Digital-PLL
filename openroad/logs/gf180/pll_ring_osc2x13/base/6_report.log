@@ -1,0 +1,63 @@
+OpenROAD 9f7714859944860f802c7c961ba83ab4ae83849f 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
+read_db ./results/gf180/pll_ring_osc2x13/base/6_1_fill.odb
+Deleted 0 routing obstructions
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/openROAD/rcx/gf180mcu_1p5m_1tm_9k_sp_smim_OPTB_bst.rules ...
+[INFO RCX-0436] RC segment generation ring_osc2x13 (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 283 rc segments
+[INFO RCX-0439] Coupling Cap extraction ring_osc2x13 ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 44% of 634 wires extracted
+[INFO RCX-0442] 100% of 634 wires extracted
+[INFO RCX-0045] Extract 155 nets, 409 rsegs, 409 caps, 354 ccs
+[INFO RCX-0443] 155 nets finished
+[INFO PSM-0040] All shapes on net VDD are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VDD
+Corner           : default
+Supply voltage   : 3.60e+00 V
+Worstcase voltage: 3.60e+00 V
+Average voltage  : 3.60e+00 V
+Average IR drop  : 1.07e-04 V
+Worstcase IR drop: 1.67e-04 V
+Percentage drop  : 0.00 %
+######################################
+[INFO PSM-0040] All shapes on net VSS are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VSS
+Corner           : default
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 1.54e-04 V
+Average voltage  : 1.01e-04 V
+Average IR drop  : 1.01e-04 V
+Worstcase IR drop: 1.54e-04 V
+Percentage drop  : 0.00 %
+######################################
+Cell type report:                       Count       Area
+  Endcap cell                              60     263.42
+  Fill cell                               285    8398.84
+  Tap cell                                 16      70.25
+  Tie cell                                  3      26.34
+  Timing Repair Buffer                     28    2212.76
+  Inverter                                 42     491.72
+  Multi-Input combinational cell           54    2827.42
+  Total                                   488   14290.75
+Report metrics stage 6, finish...
+No registers in design
+
+==========================================================================
+finish report_design_area
+--------------------------------------------------------------------------
+Design area 5558 u^2 39% utilization.
+[WARNING STA-0351] clock '*' not found.
+Elapsed time: 0:01.49[h:]min:sec. CPU time: user 1.46 sys 0.41 (125%). Peak memory: 194048KB.
+Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+6_report                           1            189                  N/A

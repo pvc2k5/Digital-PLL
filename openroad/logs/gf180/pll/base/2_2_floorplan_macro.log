@@ -1,0 +1,28 @@
+OpenROAD 9f7714859944860f802c7c961ba83ab4ae83849f 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 16 thread(s).
+read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
+read_liberty ./results/gf180/pll_digital_pll_controller/base/digital_pll_controller_typ.lib
+read_liberty ./results/gf180/pll_ring_osc2x13/base/ring_osc2x13_typ.lib
+read_db ./results/gf180/pll/base/2_1_floorplan.odb
+rtl_macro_placer -max_num_level 2 -halo_width 20 -halo_height 20 -min_ar 0.33 -signature_net_threshold 50 -area_weight 0.1 -wirelength_weight 100.0 -outline_weight 100.0 -boundary_weight 50.0 -notch_weight 10.0 -target_dead_space 0.05 -report_directory ./objects/gf180/pll/base/rtlmp -fence_lx 0.0 -fence_ly 0.0 -fence_ux 100000000.0 -fence_uy 100000000.0 -target_util 0.55
+Die Area: (0.00, 0.00) (500.00, 500.00),  Floorplan Area: (10.08, 11.76) (490.00, 490.00)
+	Number of std cell instances: 0
+	Area of std cell instances: 0.00
+	Number of macros: 2
+	Area of macros: 42371.39
+	Halo width: 20.00
+	Halo height: 20.00
+	Area of macros with halos: 68672.59
+	Area of std cell instances + Area of macros: 42371.39
+	Floorplan area: 229516.94
+	Design Utilization: 0.18
+	Floorplan Utilization: 0.00
+	Manufacturing Grid: 10
+
+[WARNING MPL-0025] Design has no standard cells!
+Elapsed time: 0:01.21[h:]min:sec. CPU time: user 9.93 sys 0.04 (820%). Peak memory: 126896KB.
+Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+2_2_floorplan_macro                1            123 6e16f4f1d07ac9aaf7d6
