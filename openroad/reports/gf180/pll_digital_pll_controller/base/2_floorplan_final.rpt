@@ -12,7 +12,7 @@ wns max 0.00
 ==========================================================================
 floorplan final report_worst_slack
 --------------------------------------------------------------------------
-worst slack max 2.50
+worst slack max 12.50
 
 ==========================================================================
 floorplan final report_clock_min_period
@@ -133,19 +133,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.08    0.00    7.23 ^ tval[6]$_DFFE_PP0P_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_2)
                                   7.23   data arrival time
 
-                         10.00   10.00   clock ring_clk (rise edge)
-                          0.00   10.00   clock source latency
-    23    0.08    0.00    0.00   10.00 ^ clock (in)
+                         20.00   20.00   clock ring_clk (rise edge)
+                          0.00   20.00   clock source latency
+    23    0.08    0.00    0.00   20.00 ^ clock (in)
                                          clock (net)
-                  0.00    0.00   10.00 ^ tval[6]$_DFFE_PP0P_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_2)
-                          0.00   10.00   clock reconvergence pessimism
-                         -0.27    9.73   library setup time
-                                  9.73   data required time
+                  0.00    0.00   20.00 ^ tval[6]$_DFFE_PP0P_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_2)
+                          0.00   20.00   clock reconvergence pessimism
+                         -0.27   19.73   library setup time
+                                 19.73   data required time
 -----------------------------------------------------------------------------
-                                  9.73   data required time
+                                 19.73   data required time
                                  -7.23   data arrival time
 -----------------------------------------------------------------------------
-                                  2.50   slack (MET)
+                                 12.50   slack (MET)
 
 
 
@@ -225,19 +225,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.08    0.00    7.23 ^ tval[6]$_DFFE_PP0P_/D (gf180mcu_fd_sc_mcu7t5v0__dffrnq_2)
                                   7.23   data arrival time
 
-                         10.00   10.00   clock ring_clk (rise edge)
-                          0.00   10.00   clock source latency
-    23    0.08    0.00    0.00   10.00 ^ clock (in)
+                         20.00   20.00   clock ring_clk (rise edge)
+                          0.00   20.00   clock source latency
+    23    0.08    0.00    0.00   20.00 ^ clock (in)
                                          clock (net)
-                  0.00    0.00   10.00 ^ tval[6]$_DFFE_PP0P_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_2)
-                          0.00   10.00   clock reconvergence pessimism
-                         -0.27    9.73   library setup time
-                                  9.73   data required time
+                  0.00    0.00   20.00 ^ tval[6]$_DFFE_PP0P_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffrnq_2)
+                          0.00   20.00   clock reconvergence pessimism
+                         -0.27   19.73   library setup time
+                                 19.73   data required time
 -----------------------------------------------------------------------------
-                                  9.73   data required time
+                                 19.73   data required time
                                  -7.23   data arrival time
 -----------------------------------------------------------------------------
-                                  2.50   slack (MET)
+                                 12.50   slack (MET)
 
 
 
@@ -247,11 +247,11 @@ floorplan final report_power
 Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
-Sequential             1.22e-03   2.38e-04   5.54e-09   1.46e-03  27.4%
-Combinational          2.69e-03   1.17e-03   1.42e-08   3.87e-03  72.6%
+Sequential             6.10e-04   1.19e-04   5.54e-09   7.29e-04  27.4%
+Combinational          1.35e-03   5.87e-04   1.42e-08   1.93e-03  72.6%
 Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  3.91e-03   1.41e-03   1.98e-08   5.33e-03 100.0%
+Total                  1.96e-03   7.06e-04   1.98e-08   2.66e-03 100.0%
                           73.5%      26.5%       0.0%

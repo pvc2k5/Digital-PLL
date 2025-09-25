@@ -1,7 +1,7 @@
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
 Using ABC speed script.
 Extracting clock period from SDC file: ./results/gf180/pll_ring_osc2x13/base/clock_period.txt
-Setting clock period to 20
+Setting clock period to 100
 1. Executing Liberty frontend: ./objects/gf180/pll_ring_osc2x13/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib
 2. Executing Liberty frontend: ./objects/gf180/pll_ring_osc2x13/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib
 3. Executing Verilog-2005 frontend: /home/pvc/openroad/Digital-PLL/RTL/digital_pll.v
@@ -9,7 +9,6 @@ Setting clock period to 20
 5. Executing Verilog-2005 frontend: /home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v
 6. Executing HIERARCHY pass (managing design hierarchy).
 7. Executing AST frontend in derive mode using pre-parsed AST for module `\ring_osc2x13'.
-/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:248: Warning: Identifier `\ireset' is implicitly declared.
 7.1. Analyzing design hierarchy..
 7.2. Executing AST frontend in derive mode using pre-parsed AST for module `\delay_stage'.
 7.3. Executing AST frontend in derive mode using pre-parsed AST for module `\start_stage'.
@@ -17,8 +16,7 @@ Setting clock period to 20
 7.5. Analyzing design hierarchy..
 8. Executing OPT_CLEAN pass (remove unused cells and wires).
 9. Executing RTLIL backend.
-Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: 1caaa62b5e, CPU: user 0.18s system 0.06s, MEM: 65.90 MB peak
+End of script. Logfile hash: 66483060f6, CPU: user 0.22s system 0.07s, MEM: 65.81 MB peak
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
-Time spent: 92% 4x read_liberty (0 sec), 3% 2x write_rtlil (0 sec), ...
-Elapsed time: 0:00.26[h:]min:sec. CPU time: user 0.21 sys 0.06 (105%). Peak memory: 70412KB.
+Time spent: 94% 4x read_liberty (0 sec), 2% 2x write_rtlil (0 sec), ...
+Elapsed time: 0:00.33[h:]min:sec. CPU time: user 0.29 sys 0.07 (109%). Peak memory: 70372KB.

@@ -6,6 +6,6 @@ Components of this program may be licensed under more restrictive licenses which
 read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
 read_db ./results/gf180/pll_digital_pll_controller/base/5_route.odb
 exec cp ./results/gf180/pll_digital_pll_controller/base/5_route.odb ./results/gf180/pll_digital_pll_controller/base/6_1_fill.odb
-Elapsed time: 0:00.59[h:]min:sec. CPU time: user 0.60 sys 0.03 (107%). Peak memory: 124796KB.
+Elapsed time: 0:00.60[h:]min:sec. CPU time: user 0.61 sys 0.05 (110%). Peak memory: 125264KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-6_1_fill                           0            121 6662b873edbd900c5de0
+6_1_fill                           0            122 59ea9fa42d801202835b

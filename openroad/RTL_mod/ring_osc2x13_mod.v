@@ -159,9 +159,9 @@ endmodule
 
 module ring_osc2x13(reset, enable, dco, ext_trim, trim, clockp);
     input reset;
-	input enable;
-	input dco;
-	input [25:0] ext_trim;
+    input enable;
+    input dco;
+    input [25:0] ext_trim;
     input [25:0] trim;
     output[1:0] clockp;
 
@@ -172,12 +172,6 @@ module ring_osc2x13(reset, enable, dco, ext_trim, trim, clockp);
     integer i;
     real delay;
     wire [5:0] bcount;
-	wire ireset;
-	wire [25:0] itrim;
-	
-	assign ireset = ~resetb | ~enable;
-    
-    assign itrim = (dco == 1'b0) ? trim : ext_trim;
 	
     assign bcount = trim[0] + trim[1] + trim[2]
 		+ trim[3] + trim[4] + trim[5] + trim[6] + trim[7]
@@ -200,7 +194,7 @@ module ring_osc2x13(reset, enable, dco, ext_trim, trim, clockp);
 	hiclock <= (hiclock === 1'b0);
     end
 
-    always @(trim) begin
+    always @(itrim) begin
     	// Implement trim as a variable delay, one delay per trim bit
 	delay = 1.168 + 0.012 * $itor(bcount);
     end
@@ -226,7 +220,11 @@ module ring_osc2x13(reset, enable, dco, ext_trim, trim, clockp);
     wire [1:0] clockp;
     wire [12:0] d;
     wire [1:0] c;
-
+    wire ireset;
+    wire [25:0] itrim;
+    assign ireset = ~reset | ~enable;
+    
+    assign itrim = (dco == 1'b0) ? trim : ext_trim;
     // Main oscillator loop stages
  
     genvar i;
@@ -234,7 +232,7 @@ module ring_osc2x13(reset, enable, dco, ext_trim, trim, clockp);
 	for (i = 0; i < 12; i = i + 1) begin : dstage
 	    delay_stage id (
 		.in(d[i]),
-		.trim({trim[i+13], trim[i]}),
+		.trim({itrim[i+13],itrim[i]}),
 		.out(d[i+1])
 	    );
 	end
@@ -244,7 +242,7 @@ module ring_osc2x13(reset, enable, dco, ext_trim, trim, clockp);
  
     start_stage iss (
 	.in(d[12]),
-	.trim({trim[25], trim[12]}),
+	.trim({itrim[25], itrim[12]}),
 	.reset(ireset),
 	.out(d[0])
     );

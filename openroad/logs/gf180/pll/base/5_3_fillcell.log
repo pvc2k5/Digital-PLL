@@ -8,7 +8,7 @@ read_liberty ./results/gf180/pll_digital_pll_controller/base/digital_pll_control
 read_liberty ./results/gf180/pll_ring_osc2x13/base/ring_osc2x13_typ.lib
 read_db ./results/gf180/pll/base/5_2_route.odb
 filler_placement "gf180mcu_fd_sc_mcu7t5v0__fill_64 gf180mcu_fd_sc_mcu7t5v0__fill_32 gf180mcu_fd_sc_mcu7t5v0__fill_16 gf180mcu_fd_sc_mcu7t5v0__fill_8 gf180mcu_fd_sc_mcu7t5v0__fill_4 gf180mcu_fd_sc_mcu7t5v0__fill_2 gf180mcu_fd_sc_mcu7t5v0__fill_1"
-[INFO DPL-0001] Placed 1992 filler instances.
-Elapsed time: 0:00.67[h:]min:sec. CPU time: user 0.68 sys 0.04 (108%). Peak memory: 136280KB.
+[INFO DPL-0001] Placed 1971 filler instances.
+Elapsed time: 0:00.67[h:]min:sec. CPU time: user 0.65 sys 0.08 (110%). Peak memory: 136300KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-5_3_fillcell                       0            133 906490818a1e2703f050
+5_3_fillcell                       0            133 c3d86def819687eeceaf

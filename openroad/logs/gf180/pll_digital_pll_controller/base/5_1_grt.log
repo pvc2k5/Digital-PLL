@@ -41,7 +41,7 @@ Number of nets:           246
     default via: Via4_1_VH
 [INFO DRT-0162] Library cell analysis.
 [INFO DRT-0163] Instance analysis.
-[INFO DRT-0164] Number of unique instances = 51.
+[INFO DRT-0164] Number of unique instances = 49.
 [INFO DRT-0168] Init region query.
 [INFO DRT-0024]   Complete Poly2.
 [INFO DRT-0024]   Complete CON.
@@ -66,14 +66,14 @@ Number of nets:           246
 [INFO DRT-0033] Via4 shape region query size = 0.
 [INFO DRT-0033] Metal5 shape region query size = 0.
 [INFO DRT-0165] Start pin access.
-[INFO DRT-0078]   Complete 260 pins.
-[INFO DRT-0081]   Complete 47 unique inst patterns.
-[INFO DRT-0084]   Complete 153 groups.
+[INFO DRT-0078]   Complete 248 pins.
+[INFO DRT-0081]   Complete 45 unique inst patterns.
+[INFO DRT-0084]   Complete 151 groups.
 #scanned instances     = 319
-#unique  instances     = 51
-#stdCellGenAp          = 1315
+#unique  instances     = 49
+#stdCellGenAp          = 1260
 #stdCellValidPlanarAp  = 0
-#stdCellValidViaAp     = 909
+#stdCellValidViaAp     = 876
 #stdCellPinNoAp        = 0
 #stdCellPinCnt         = 695
 #instTermValidViaApCnt = 0
@@ -82,7 +82,7 @@ Number of nets:           246
 #macroValidViaAp       = 0
 #macroNoAp             = 0
 [INFO DRT-0166] Complete pin access.
-[INFO DRT-0267] cpu time = 00:00:05, elapsed time = 00:00:00, memory = 124.09 (MB), peak = 124.09 (MB)
+[INFO DRT-0267] cpu time = 00:00:05, elapsed time = 00:00:00, memory = 124.22 (MB), peak = 124.22 (MB)
 global_route -congestion_report_file ./reports/gf180/pll_digital_pll_controller/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
 [INFO GRT-0020] Min routing layer: Metal2
 [INFO GRT-0021] Max routing layer: Metal4
@@ -109,23 +109,23 @@ Metal4     Vertical         5510          3114          43.48%
 ---------------------------------------------------------------
 
 [INFO GRT-0101] Running extra iterations to remove overflow.
-[INFO GRT-0197] Via related to pin nodes: 1223
-[INFO GRT-0198] Via related Steiner nodes: 21
+[INFO GRT-0197] Via related to pin nodes: 1206
+[INFO GRT-0198] Via related Steiner nodes: 23
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 1507
-[INFO GRT-0112] Final usage 3D: 5361
+[INFO GRT-0111] Final number of vias: 1489
+[INFO GRT-0112] Final usage 3D: 5295
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 Metal1               0             0            0.00%             0 /  0 /  0
-Metal2            3132           443           14.14%             0 /  0 /  0
-Metal3            3716           359            9.66%             0 /  0 /  0
-Metal4            3114            38            1.22%             0 /  0 /  0
+Metal2            3132           439           14.02%             0 /  0 /  0
+Metal3            3716           348            9.36%             0 /  0 /  0
+Metal4            3114            41            1.32%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total             9962           840            8.43%             0 /  0 /  0
+Total             9962           828            8.31%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 11365 um
+[INFO GRT-0018] Total wirelength: 11298 um
 [INFO GRT-0014] Routed nets: 246
 Perform buffer insertion and gate resizing...
 repair_design -verbose
@@ -165,8 +165,8 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL            6026.4 u
-legalized HPWL           6026.4 u
+original HPWL            5990.5 u
+legalized HPWL           5990.5 u
 delta HPWL                    0 %
 
 global_route -end_incremental -congestion_report_file ./reports/gf180/pll_digital_pll_controller/base/congestion_post_repair_design.rpt
@@ -182,8 +182,8 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL            6026.4 u
-legalized HPWL           6026.4 u
+original HPWL            5990.5 u
+legalized HPWL           5990.5 u
 delta HPWL                    0 %
 
 global_route -end_incremental -congestion_report_file ./reports/gf180/pll_digital_pll_controller/base/congestion_post_repair_timing.rpt
@@ -200,10 +200,10 @@ Report metrics stage 5, global route...
 global route report_design_area
 --------------------------------------------------------------------------
 Design area 9176 u^2 37% utilization.
-[INFO FLW-0007] clock ring_clk period 10.000000
-[INFO FLW-0008] Clock ring_clk period 7.761
-[INFO FLW-0009] Clock ring_clk slack 1.830
+[INFO FLW-0007] clock ring_clk period 20.000000
+[INFO FLW-0008] Clock ring_clk period 7.748
+[INFO FLW-0009] Clock ring_clk slack 11.844
 [INFO FLW-0011] Path endpoint path count 73
-Elapsed time: 0:02.32[h:]min:sec. CPU time: user 7.08 sys 1.24 (358%). Peak memory: 201436KB.
+Elapsed time: 0:02.35[h:]min:sec. CPU time: user 7.13 sys 1.42 (363%). Peak memory: 202196KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-5_1_grt                            2            196 30e4f4084e4fb785f6ee
+5_1_grt                            2            197 66580ed1420e4f2954af

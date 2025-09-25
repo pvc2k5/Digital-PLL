@@ -233,4 +233,4 @@ Warning: No mapping for purpose 'OUTLINE' - layer is ignored (line=6, cell=, fil
 	/home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/gds/7t/gf180mcu_fd_sc_mcu7t5v0__xor3_4.gds
 [INFO] All LEF cells have matching GDS/OAS cells
 [INFO] No orphan cells in the final layout
-Elapsed time: 0:00.45[h:]min:sec. CPU time: user 0.37 sys 0.04 (94%). Peak memory: 123172KB.
+Elapsed time: 0:00.41[h:]min:sec. CPU time: user 0.43 sys 0.01 (108%). Peak memory: 123072KB.

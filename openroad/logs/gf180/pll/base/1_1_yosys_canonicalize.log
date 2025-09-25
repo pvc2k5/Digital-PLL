@@ -1,7 +1,7 @@
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
 Using ABC area script.
 Extracting clock period from SDC file: ./results/gf180/pll/base/clock_period.txt
-Setting clock period to 20
+Setting clock period to 100
 1. Executing Liberty frontend: ./objects/gf180/pll/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib
 2. Executing Liberty frontend: ./objects/gf180/pll/base/lib/digital_pll_controller_typ.lib
 3. Executing Liberty frontend: ./objects/gf180/pll/base/lib/ring_osc2x13_typ.lib
@@ -17,7 +17,7 @@ Setting clock period to 20
 11.2. Analyzing design hierarchy..
 12. Executing OPT_CLEAN pass (remove unused cells and wires).
 13. Executing RTLIL backend.
-End of script. Logfile hash: 81709d63d7, CPU: user 0.19s system 0.04s, MEM: 65.81 MB peak
+End of script. Logfile hash: 81709d63d7, CPU: user 0.21s system 0.05s, MEM: 65.89 MB peak
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
-Time spent: 93% 8x read_liberty (0 sec), 2% 2x write_rtlil (0 sec), ...
-Elapsed time: 0:00.26[h:]min:sec. CPU time: user 0.23 sys 0.05 (109%). Peak memory: 71420KB.
+Time spent: 94% 8x read_liberty (0 sec), 2% 2x write_rtlil (0 sec), ...
+Elapsed time: 0:00.28[h:]min:sec. CPU time: user 0.24 sys 0.07 (110%). Peak memory: 71484KB.

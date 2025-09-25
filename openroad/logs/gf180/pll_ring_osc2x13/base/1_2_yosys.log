@@ -1,7 +1,7 @@
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
 Using ABC speed script.
 Extracting clock period from SDC file: ./results/gf180/pll_ring_osc2x13/base/clock_period.txt
-Setting clock period to 20
+Setting clock period to 100
 1. Executing RTLIL frontend.
 2. Executing HIERARCHY pass (managing design hierarchy).
 2.1. Analyzing design hierarchy..
@@ -106,7 +106,6 @@ Warning: multiple conflicting drivers for ring_osc2x13.\dstage[0].id.d1:
 Warning: multiple conflicting drivers for ring_osc2x13.\dstage[0].id.out:
     port ZN[0] of cell dstage[0].id.delayen0 (gf180mcu_fd_sc_mcu7t5v0__invz_2)
     port ZN[0] of cell dstage[0].id.delayenb0 (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-Warning: Wire ring_osc2x13.\iss.reset is used but has no driver.
 3.7. Executing OPT pass (performing simple optimizations).
 3.7.1. Executing OPT_EXPR pass (perform const folding).
 3.7.2. Executing OPT_MERGE pass (detect identical cells).
@@ -251,9 +250,11 @@ Warning: Wire ring_osc2x13.\iss.reset is used but has no driver.
 12.8. Executing OPT_EXPR pass (perform const folding).
 12.9. Finished fast OPT passes. (There is nothing left to do.)
 13. Executing SETUNDEF pass (replace undef values with defined constants).
-abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/scripts/abc_speed.script -liberty ./objects/gf180/pll_ring_osc2x13/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib -constr ./objects/gf180/pll_ring_osc2x13/base/abc.constr -dont_use *_1 -D 20
+abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/scripts/abc_speed.script -liberty ./objects/gf180/pll_ring_osc2x13/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib -constr ./objects/gf180/pll_ring_osc2x13/base/abc.constr -dont_use *_1 -D 100
 14. Executing ABC pass (technology mapping using ABC).
 14.1. Extracting gate netlist of module `\ring_osc2x13' to `<abc-temp-dir>/input.blif'..
+14.1.1. Executing ABC.
+14.1.2. Re-integrating ABC results.
 15. Executing SPLITNETS pass (splitting up multi-bit signals).
 16. Executing OPT_CLEAN pass (remove unused cells and wires).
 17. Executing HILOMAP pass (mapping to constant drivers).
@@ -264,8 +265,8 @@ abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/s
 21.1. Executing BMUXMAP pass.
 21.2. Executing DEMUXMAP pass.
 exec cp /home/pvc/openroad/Digital-PLL/openroad/digital_pll/ring_osc2x13/constraint.sdc ./results/gf180/pll_ring_osc2x13/base/1_synth.sdc
-Warnings: 27 unique messages, 79 total
-End of script. Logfile hash: 5ffbd53717, CPU: user 0.28s system 0.05s, MEM: 70.23 MB peak
+Warnings: 26 unique messages, 78 total
+End of script. Logfile hash: 96303f155c, CPU: user 0.43s system 0.01s, MEM: 70.45 MB peak
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
-Time spent: 26% 2x stat (0 sec), 24% 1x dfflibmap (0 sec), ...
-Elapsed time: 0:00.38[h:]min:sec. CPU time: user 0.36 sys 0.04 (107%). Peak memory: 73676KB.
+Time spent: 35% 2x abc (0 sec), 15% 2x stat (0 sec), ...
+Elapsed time: 0:00.69[h:]min:sec. CPU time: user 0.69 sys 0.05 (108%). Peak memory: 73812KB.

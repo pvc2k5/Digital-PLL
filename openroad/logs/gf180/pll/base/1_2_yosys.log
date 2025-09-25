@@ -1,7 +1,7 @@
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
 Using ABC area script.
 Extracting clock period from SDC file: ./results/gf180/pll/base/clock_period.txt
-Setting clock period to 20
+Setting clock period to 100
 1. Executing RTLIL frontend.
 2. Executing HIERARCHY pass (managing design hierarchy).
 2.1. Analyzing design hierarchy..
@@ -249,7 +249,7 @@ Warning: Ignoring blackbox module ring_osc2x13.
 15.8. Executing OPT_EXPR pass (perform const folding).
 15.9. Finished fast OPT passes. (There is nothing left to do.)
 16. Executing SETUNDEF pass (replace undef values with defined constants).
-abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/scripts/abc_area.script -liberty ./objects/gf180/pll/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib -constr ./objects/gf180/pll/base/abc.constr -dont_use *_1 -D 20
+abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/scripts/abc_area.script -liberty ./objects/gf180/pll/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib -constr ./objects/gf180/pll/base/abc.constr -dont_use *_1 -D 100
 17. Executing ABC pass (technology mapping using ABC).
 17.1. Extracting gate netlist of module `\digital_pll' to `<abc-temp-dir>/input.blif'..
 18. Executing SPLITNETS pass (splitting up multi-bit signals).
@@ -263,7 +263,7 @@ abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/s
 24.2. Executing DEMUXMAP pass.
 exec cp /home/pvc/openroad/Digital-PLL/openroad/digital_pll/constraint.sdc ./results/gf180/pll/base/1_synth.sdc
 Warnings: 8 unique messages, 8 total
-End of script. Logfile hash: 7413fa51b3, CPU: user 0.36s system 0.03s, MEM: 70.01 MB peak
+End of script. Logfile hash: 2173f247da, CPU: user 0.36s system 0.06s, MEM: 70.09 MB peak
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
-Time spent: 22% 2x stat (0 sec), 20% 1x dfflibmap (0 sec), ...
-Elapsed time: 0:00.43[h:]min:sec. CPU time: user 0.40 sys 0.06 (108%). Peak memory: 73376KB.
+Time spent: 23% 1x dfflibmap (0 sec), 21% 2x stat (0 sec), ...
+Elapsed time: 0:00.45[h:]min:sec. CPU time: user 0.41 sys 0.07 (108%). Peak memory: 73436KB.

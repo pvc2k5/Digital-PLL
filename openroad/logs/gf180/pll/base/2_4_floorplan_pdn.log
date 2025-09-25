@@ -10,6 +10,6 @@ read_db ./results/gf180/pll/base/2_3_floorplan_tapcell.odb
 [INFO PDN-0001] Inserting grid: block
 [INFO PDN-0001] Inserting grid: BlocksGridController - pll_control
 [INFO PDN-0001] Inserting grid: BlocksGridOsc - ringosc
-Elapsed time: 0:00.62[h:]min:sec. CPU time: user 0.58 sys 0.08 (107%). Peak memory: 131540KB.
+Elapsed time: 0:00.68[h:]min:sec. CPU time: user 0.67 sys 0.07 (110%). Peak memory: 132368KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_4_floorplan_pdn                  0            128 9b59eb314e9d540f63c8
+2_4_floorplan_pdn                  0            129 287962083c282771196f

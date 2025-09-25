@@ -21,7 +21,7 @@ link_design digital_pll
 Floorplan check_setup
 --------------------------------------------------------------------------
 Warning: There is 1 unclocked register/latch pin.
-Warning: There are 10 unconstrained endpoints.
+Warning: There are 8 unconstrained endpoints.
 number instances in verilog is 2
 [WARNING IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.080, 11.760).
 [INFO IFP-0001] Added 122 rows of 857 site GF018hv5v_mcu_sc7.
@@ -45,8 +45,8 @@ Report metrics stage 2, floorplan final...
 ==========================================================================
 floorplan final report_design_area
 --------------------------------------------------------------------------
-Design area 42371 u^2 18% utilization.
+Design area 46852 u^2 20% utilization.
 source /home/pvc/openroad/Digital-PLL/openroad/digital_pll/io.tcl
-Elapsed time: 0:00.78[h:]min:sec. CPU time: user 0.70 sys 0.17 (111%). Peak memory: 150564KB.
+Elapsed time: 0:00.74[h:]min:sec. CPU time: user 0.69 sys 0.14 (113%). Peak memory: 146588KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_1_floorplan                      0            147 0c68ffe40dc39a5ba0b7
+2_1_floorplan                      0            143 cc90ed705b6acc85eeae

@@ -12,10 +12,10 @@
        63        - public wire bits
         7        - ports
        37        - port bits
-        2 3.91E+04 cells
+        2 4.33E+04 cells
         1 2.48E+04   digital_pll_controller
-        1 1.43E+04   ring_osc2x13
+        1 1.84E+04   ring_osc2x13
 
-   Chip area for module '\digital_pll': 39140.610000
+   Chip area for module '\digital_pll': 43285.187000
      of which used for sequential elements: 0.000000 (0.00%)
 

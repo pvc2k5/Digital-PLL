@@ -94,7 +94,7 @@ Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
       230 |     +0.0% |       0 |        0 |         3
     final |     +0.0% |       0 |        0 |         0
 -------------------------------------------------------
-[INFO GPL-0106] Timing-driven: worst slack 2.3e-09
+[INFO GPL-0106] Timing-driven: worst slack 1.23e-08
 [INFO GPL-0107] Timing-driven: repair_design delta area: 0.000 um^2 (+0.00%)
 [INFO GPL-0108] Timing-driven: repair_design, gpl cells created: 0 (+0.00%)
 [INFO GPL-0110] Timing-driven: new target density: 0.55
@@ -102,17 +102,17 @@ Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
 ---------------------------------------------------------------
       260 |   0.6196 |  3.513534e+03 |   +9.34% |  1.21e-10 |      
 [INFO GPL-0038] Routability snapshot saved at iter = 267
-      270 |   0.5932 |  3.661760e+03 |   +4.22% |  1.98e-10 |      
-      280 |   0.5499 |  3.963528e+03 |   +8.24% |  3.22e-10 |      
-      290 |   0.4989 |  4.219552e+03 |   +6.46% |  5.25e-10 |      
-      300 |   0.4663 |  4.463526e+03 |   +5.78% |  8.55e-10 |      
-      310 |   0.4016 |  4.655171e+03 |   +4.29% |  1.39e-09 |      
-      320 |   0.3457 |  4.765489e+03 |   +2.37% |  2.27e-09 |      
-      330 |   0.3131 |  4.885431e+03 |   +2.52% |  3.38e-09 |      
+      270 |   0.5932 |  3.661740e+03 |   +4.22% |  1.98e-10 |      
+      280 |   0.5499 |  3.963517e+03 |   +8.24% |  3.22e-10 |      
+      290 |   0.4989 |  4.219544e+03 |   +6.46% |  5.25e-10 |      
+      300 |   0.4663 |  4.463487e+03 |   +5.78% |  8.55e-10 |      
+      310 |   0.4016 |  4.655207e+03 |   +4.30% |  1.39e-09 |      
+      320 |   0.3457 |  4.765524e+03 |   +2.37% |  2.27e-09 |      
+      330 |   0.3131 |  4.885458e+03 |   +2.52% |  3.38e-09 |      
 [INFO GPL-0040] Routability iteration: 1
 [INFO GPL-0041] Total routing overflow: 0.0000
 [INFO GPL-0042] Number of overflowed tiles: 0 (0.00%)
-[INFO GPL-0043] Average top 0.5% routing congestion: 0.8933
+[INFO GPL-0043] Average top 0.5% routing congestion: 0.8932
 [INFO GPL-0044] Average top 1.0% routing congestion: 0.8886
 [INFO GPL-0045] Average top 2.0% routing congestion: 0.8665
 [INFO GPL-0046] Average top 5.0% routing congestion: 0.8183
@@ -121,11 +121,11 @@ Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
 [INFO GPL-0090] Routability finished. Target routing congestion achieved succesfully.
 Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
 ---------------------------------------------------------------
-      340 |   0.2832 |  4.986333e+03 |   +2.07% |  4.97e-09 |      
-      350 |   0.2335 |  5.076880e+03 |   +1.82% |  7.33e-09 |      
-      360 |   0.2034 |  5.156376e+03 |   +1.57% |  1.08e-08 |      
+      340 |   0.2832 |  4.986316e+03 |   +2.06% |  4.97e-09 |      
+      350 |   0.2335 |  5.076847e+03 |   +1.82% |  7.33e-09 |      
+      360 |   0.2034 |  5.156385e+03 |   +1.57% |  1.08e-08 |      
 [INFO GPL-0100] Timing-driven iteration 2/2, virtual: false.
-[INFO GPL-0101]    Iter: 369, overflow: 0.195, keep resizer changes at: 1, HPWL: 10416979
+[INFO GPL-0101]    Iter: 369, overflow: 0.195, keep resizer changes at: 1, HPWL: 10416988
 Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
 ---------------------------------------------------------------------
         0 |     +0.0% |       0 |       0 |             0 |       243
@@ -147,17 +147,17 @@ Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
       230 |     +0.0% |       0 |        0 |         3
     final |     +0.0% |       0 |        0 |         0
 -------------------------------------------------------
-[INFO GPL-0106] Timing-driven: worst slack 2.31e-09
+[INFO GPL-0106] Timing-driven: worst slack 1.23e-08
 [INFO GPL-0107] Timing-driven: repair_design delta area: 0.000 um^2 (+0.00%)
 [INFO GPL-0108] Timing-driven: repair_design, gpl cells created: 0 (+0.00%)
 [INFO GPL-0110] Timing-driven: new target density: 0.55
 Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
 ---------------------------------------------------------------
-      370 |   0.1885 |  5.227292e+03 |   +1.38% |  1.59e-08 |      
+      370 |   0.1885 |  5.227305e+03 |   +1.38% |  1.59e-08 |      
       380 |   0.1454 |  5.315334e+03 |   +1.68% |  2.34e-08 |      
-      390 |   0.1288 |  5.357481e+03 |   +0.79% |  3.45e-08 |      
-      400 |   0.1048 |  5.407794e+03 |   +0.94% |  5.08e-08 |      
-      405 |   0.0994 |  5.450442e+03 |          |  6.41e-08 |      
+      390 |   0.1288 |  5.357479e+03 |   +0.79% |  3.45e-08 |      
+      400 |   0.1048 |  5.407684e+03 |   +0.94% |  5.08e-08 |      
+      405 |   0.0994 |  5.450485e+03 |          |  6.41e-08 |      
 ---------------------------------------------------------------
 [INFO GPL-1001] Global placement finished at iteration 405
 [INFO GPL-1003] Routability mode iteration count: 68
@@ -179,6 +179,6 @@ Report metrics stage 3, global place...
 global place report_design_area
 --------------------------------------------------------------------------
 Design area 9000 u^2 36% utilization.
-Elapsed time: 0:01.52[h:]min:sec. CPU time: user 4.08 sys 0.78 (319%). Peak memory: 191640KB.
+Elapsed time: 0:01.51[h:]min:sec. CPU time: user 3.36 sys 0.77 (273%). Peak memory: 191612KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-3_3_place_gp                       1            187 dcb1a51661473c768ad7
+3_3_place_gp                       1            187 65fa26d922046335edcf

@@ -43,10 +43,10 @@ module \digital_pll
   end
 end
 attribute \liberty_cell 1
-attribute \area "24849.811"
+attribute \area "24849.812"
 attribute \blackbox 1
 module \digital_pll_controller
-  attribute \capacitance "0.0163"
+  attribute \capacitance "0.0151"
   wire input 2 \clock
   attribute \capacitance "0.0031"
   wire input 3 \dco
@@ -15509,16 +15509,16 @@ module \gf180mcu_fd_sc_mcu7t5v0__xor3_4
   connect \Z $auto$rtlil.cc:3237:XorGate$2419
 end
 attribute \liberty_cell 1
-attribute \area "14290.799"
+attribute \area "18435.375"
 attribute \blackbox 1
 module \ring_osc2x13
   wire width 2 output 5 \clockp
-  attribute \capacitance "0.0000"
+  attribute \capacitance "0.0055"
   wire input 2 \dco
-  attribute \capacitance "0.0000"
+  attribute \capacitance "0.0050"
   wire input 3 \enable
   wire width 26 input 6 \ext_trim
-  attribute \capacitance "0.0000"
+  attribute \capacitance "0.0061"
   wire input 1 \reset
   wire width 26 input 4 \trim
 end

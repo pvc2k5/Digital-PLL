@@ -8,13 +8,13 @@ read_db ./results/gf180/pll_ring_osc2x13/base/3_1_place_gp_skip_io.odb
 place_pins -hor_layers Metal3 -ver_layers Metal4
 Found 0 macro blocks.
 Using 2 tracks default min distance between IO pins.
-[INFO PPL-0001] Number of available slots 110
+[INFO PPL-0001] Number of available slots 125
 [INFO PPL-0002] Number of I/O             57
-[INFO PPL-0003] Number of I/O w/sink      28
-[INFO PPL-0004] Number of I/O w/o sink    29
+[INFO PPL-0003] Number of I/O w/sink      57
+[INFO PPL-0004] Number of I/O w/o sink    0
 [INFO PPL-0005] Slots per section         200
 [INFO PPL-0008] Successfully assigned pins to sections.
-[INFO PPL-0012] I/O nets HPWL: 1831.71 um.
-Elapsed time: 0:00.58[h:]min:sec. CPU time: user 0.56 sys 0.06 (108%). Peak memory: 124924KB.
+[INFO PPL-0012] I/O nets HPWL: 3907.44 um.
+Elapsed time: 0:00.60[h:]min:sec. CPU time: user 0.62 sys 0.04 (110%). Peak memory: 124568KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-3_2_place_iop                      0            121 9db6f6a4acdae8a9b6e4
+3_2_place_iop                      0            121 72900e1b645069944f79

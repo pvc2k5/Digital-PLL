@@ -12,43 +12,112 @@ wns max 0.00
 ==========================================================================
 floorplan final report_worst_slack
 --------------------------------------------------------------------------
-worst slack max INF
+worst slack max 39.15
 
 ==========================================================================
 floorplan final report_clock_min_period
 --------------------------------------------------------------------------
-osc period_min = 0.00 fmax = inf
+osc period_min = 60.85 fmax = 16.43
 
 ==========================================================================
 floorplan final report_checks -path_delay min
 --------------------------------------------------------------------------
-No paths found.
+Startpoint: ext_trim[25] (input port clocked by osc)
+Endpoint: clockp[0] (output port clocked by osc)
+Path Group: osc
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock osc (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 ^ input external delay
+     1    0.01    0.00    0.00   20.00 ^ ext_trim[25] (in)
+                                         ext_trim[25] (net)
+                  0.00    0.00   20.00 ^ ringosc/ext_trim[25] (ring_osc2x13)
+     2    0.02    0.21    5.76   25.76 ^ ringosc/clockp[0] (ring_osc2x13)
+                                         clockp[0] (net)
+                  0.42    0.00   25.76 ^ clockp[0] (out)
+                                 25.76   data arrival time
+
+                  0.00    0.00    0.00   clock osc (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                        -20.00  -20.00   output external delay
+                                -20.00   data required time
+-----------------------------------------------------------------------------
+                                -20.00   data required time
+                                -25.76   data arrival time
+-----------------------------------------------------------------------------
+                                 45.76   slack (MET)
+
+
 
 ==========================================================================
 floorplan final report_checks -path_delay max
 --------------------------------------------------------------------------
-No paths found.
-
-==========================================================================
-floorplan final report_checks -unconstrained
---------------------------------------------------------------------------
-Startpoint: pll_control (rising edge-triggered flip-flop)
-Endpoint: clockp[1] (output port)
-Path Group: unconstrained
+Startpoint: dco (input port clocked by osc)
+Endpoint: clockp[1] (output port clocked by osc)
+Path Group: osc
 Path Type: max
 
 Fanout     Cap    Slew   Delay    Time   Description
 -----------------------------------------------------------------------------
-                  0.00    0.00    0.00 ^ pll_control/clock (digital_pll_controller)
-     1    0.02    0.26    4.32    4.32 v pll_control/trim[13] (digital_pll_controller)
-                                         otrim[13] (net)
-                  0.26    0.00    4.32 v ringosc/trim[13] (ring_osc2x13)
-     1    0.00    0.18   17.57   21.89 v ringosc/clockp[1] (ring_osc2x13)
+                  0.00    0.00    0.00   clock osc (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 ^ input external delay
+     2    0.01    0.00    0.00   20.00 ^ dco (in)
+                                         dco (net)
+                  0.00    0.00   20.00 ^ ringosc/dco (ring_osc2x13)
+     1    0.01    0.21   20.85   40.85 v ringosc/clockp[1] (ring_osc2x13)
                                          clockp[1] (net)
-                  0.36    0.00   21.89 v clockp[1] (out)
-                                 21.89   data arrival time
+                  0.41    0.00   40.85 v clockp[1] (out)
+                                 40.85   data arrival time
+
+                  0.00  100.00  100.00   clock osc (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
 -----------------------------------------------------------------------------
-(Path is unconstrained)
+                                 80.00   data required time
+                                -40.85   data arrival time
+-----------------------------------------------------------------------------
+                                 39.15   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: dco (input port clocked by osc)
+Endpoint: clockp[1] (output port clocked by osc)
+Path Group: osc
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock osc (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 ^ input external delay
+     2    0.01    0.00    0.00   20.00 ^ dco (in)
+                                         dco (net)
+                  0.00    0.00   20.00 ^ ringosc/dco (ring_osc2x13)
+     1    0.01    0.21   20.85   40.85 v ringosc/clockp[1] (ring_osc2x13)
+                                         clockp[1] (net)
+                  0.41    0.00   40.85 v clockp[1] (out)
+                                 40.85   data arrival time
+
+                  0.00  100.00  100.00   clock osc (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
+-----------------------------------------------------------------------------
+                                 80.00   data required time
+                                -40.85   data arrival time
+-----------------------------------------------------------------------------
+                                 39.15   slack (MET)
 
 
 

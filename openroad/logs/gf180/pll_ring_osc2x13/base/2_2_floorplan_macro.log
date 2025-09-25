@@ -6,6 +6,6 @@ Components of this program may be licensed under more restrictive licenses which
 read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
 read_db ./results/gf180/pll_ring_osc2x13/base/2_1_floorplan.odb
 No macros found: Skipping macro_placement
-Elapsed time: 0:00.57[h:]min:sec. CPU time: user 0.59 sys 0.02 (107%). Peak memory: 124240KB.
+Elapsed time: 0:00.85[h:]min:sec. CPU time: user 0.84 sys 0.09 (110%). Peak memory: 123432KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_2_floorplan_macro                0            121 278453efeffd9cad03ba
+2_2_floorplan_macro                0            120 05587e0fa46e7a551658

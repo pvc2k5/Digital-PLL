@@ -1,7 +1,7 @@
 KLayout 0.30.4
 Warning: DEF UNITS does not match reader DBU (DEF UNITS is 2000 and corresponds to a DBU of 0.0005, but reader DBU is set to 0.001) (line=5, cell=, file=6_final.def)
 Warning: No mapping for purpose 'OUTLINE' - layer is ignored (line=6, cell=, file=6_final.def)
-Warning: No mapping for purpose 'BLOCKAGE' - layer is ignored (line=3040, cell=, file=6_final.def)
+Warning: No mapping for purpose 'BLOCKAGE' - layer is ignored (line=3036, cell=, file=6_final.def)
 [INFO] Reporting cells prior to loading DEF ...
 	/home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/gds/7t/gf180mcu_fd_sc_mcu7t5v0__addf_1.gds
 	/home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/gds/7t/gf180mcu_fd_sc_mcu7t5v0__addf_2.gds
@@ -236,4 +236,4 @@ Warning: No mapping for purpose 'BLOCKAGE' - layer is ignored (line=3040, cell=,
 	./results/gf180/pll_ring_osc2x13/base/6_final.gds
 [INFO] All LEF cells have matching GDS/OAS cells
 [INFO] No orphan cells in the final layout
-Elapsed time: 0:00.43[h:]min:sec. CPU time: user 0.37 sys 0.09 (107%). Peak memory: 126096KB.
+Elapsed time: 0:00.47[h:]min:sec. CPU time: user 0.47 sys 0.04 (107%). Peak memory: 125952KB.

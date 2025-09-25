@@ -20,12 +20,11 @@ Warning: There are 55 input ports missing set_input_delay.
 Warning: There are 2 output ports missing set_output_delay.
 Warning: There are 2 unconstrained endpoints.
 Warning: There are 2 combinational loops in the design.
-number instances in verilog is 123
+number instances in verilog is 151
 [WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.240, 3.920).
-[INFO IFP-0001] Added 30 rows of 217 site GF018hv5v_mcu_sc7.
+[INFO IFP-0001] Added 34 rows of 247 site GF018hv5v_mcu_sc7.
 source /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/fastroute.tcl
 Repair tie lo fanout...
-[INFO RSZ-0042] Inserted 2 tie gf180mcu_fd_sc_mcu7t5v0__tiel instances.
 Repair tie hi fanout...
 [INFO RSZ-0042] Inserted 1 tie gf180mcu_fd_sc_mcu7t5v0__tieh instances.
 repair_timing -setup -verbose -setup_margin 0 -sequence unbuffer,sizeup,swap,buffer,vt_swap -repair_tns 100 -skip_last_gasp
@@ -45,8 +44,8 @@ Report metrics stage 2, floorplan final...
 ==========================================================================
 floorplan final report_design_area
 --------------------------------------------------------------------------
-Design area 3727 u^2 26% utilization.
+Design area 4805 u^2 26% utilization.
 source /home/pvc/openroad/Digital-PLL/openroad/digital_pll/ring_osc2x13/io.tcl
-Elapsed time: 0:00.72[h:]min:sec. CPU time: user 0.71 sys 0.08 (110%). Peak memory: 146600KB.
+Elapsed time: 0:01.11[h:]min:sec. CPU time: user 1.00 sys 0.26 (113%). Peak memory: 146436KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_1_floorplan                      0            143 278453efeffd9cad03ba
+2_1_floorplan                      1            143 05587e0fa46e7a551658

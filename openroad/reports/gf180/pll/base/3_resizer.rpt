@@ -12,46 +12,130 @@ wns max 0.00
 ==========================================================================
 resizer report_worst_slack
 --------------------------------------------------------------------------
-worst slack max INF
+worst slack max 34.28
 
 ==========================================================================
 resizer report_clock_min_period
 --------------------------------------------------------------------------
-osc period_min = 0.00 fmax = inf
+osc period_min = 65.72 fmax = 15.22
 
 ==========================================================================
 resizer report_checks -path_delay min
 --------------------------------------------------------------------------
-No paths found.
+Startpoint: ext_trim[25] (input port clocked by osc)
+Endpoint: clockp[0] (output port clocked by osc)
+Path Group: osc
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock osc (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 ^ input external delay
+     1    0.01    0.00    0.00   20.00 ^ ext_trim[25] (in)
+                                         ext_trim[25] (net)
+                  0.00    0.00   20.00 ^ input25/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.01    0.14    1.89   21.89 ^ input25/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         net25 (net)
+                  0.07    0.00   21.89 ^ ringosc/ext_trim[25] (ring_osc2x13)
+     2    0.07    0.59    6.00   27.89 ^ ringosc/clockp[0] (ring_osc2x13)
+                                         net35 (net)
+                  1.17    0.00   27.89 ^ output35/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.00    0.10    1.89   29.78 ^ output35/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         clockp[0] (net)
+                  0.10    0.00   29.78 ^ clockp[0] (out)
+                                 29.78   data arrival time
+
+                  0.00    0.00    0.00   clock osc (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                        -20.00  -20.00   output external delay
+                                -20.00   data required time
+-----------------------------------------------------------------------------
+                                -20.00   data required time
+                                -29.78   data arrival time
+-----------------------------------------------------------------------------
+                                 49.78   slack (MET)
+
+
 
 ==========================================================================
 resizer report_checks -path_delay max
 --------------------------------------------------------------------------
-No paths found.
-
-==========================================================================
-resizer report_checks -unconstrained
---------------------------------------------------------------------------
-Startpoint: pll_control (rising edge-triggered flip-flop)
-Endpoint: clockp[1] (output port)
-Path Group: unconstrained
+Startpoint: dco (input port clocked by osc)
+Endpoint: clockp[1] (output port clocked by osc)
+Path Group: osc
 Path Type: max
 
 Fanout     Cap    Slew   Delay    Time   Description
 -----------------------------------------------------------------------------
-                  0.00    0.00    0.00 ^ pll_control/clock (digital_pll_controller)
-     1    0.08    0.61    4.55    4.55 ^ pll_control/trim[13] (digital_pll_controller)
-                                         otrim[13] (net)
-                  0.61    0.00    4.55 ^ ringosc/trim[13] (ring_osc2x13)
-     1    0.01    0.22   17.61   22.16 v ringosc/clockp[1] (ring_osc2x13)
+                  0.00    0.00    0.00   clock osc (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 v input external delay
+     1    0.01    0.00    0.00   20.00 v dco (in)
+                                         dco (net)
+                  0.00    0.00   20.00 v input1/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     2    0.09    0.50    2.36   22.36 v input1/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         net1 (net)
+                  0.25    0.00   22.36 v ringosc/dco (ring_osc2x13)
+     1    0.04    0.33   20.98   43.33 v ringosc/clockp[1] (ring_osc2x13)
                                          net36 (net)
-                  0.44    0.00   22.16 v output36/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     1    0.01    0.20    2.19   24.35 v output36/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                  0.66    0.00   43.33 v output36/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.03    0.32    2.39   45.72 v output36/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
                                          clockp[1] (net)
-                  0.20    0.00   24.35 v clockp[1] (out)
-                                 24.35   data arrival time
+                  0.32    0.00   45.72 v clockp[1] (out)
+                                 45.72   data arrival time
+
+                  0.00  100.00  100.00   clock osc (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
 -----------------------------------------------------------------------------
-(Path is unconstrained)
+                                 80.00   data required time
+                                -45.72   data arrival time
+-----------------------------------------------------------------------------
+                                 34.28   slack (MET)
+
+
+
+==========================================================================
+resizer report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: dco (input port clocked by osc)
+Endpoint: clockp[1] (output port clocked by osc)
+Path Group: osc
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock osc (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         20.00   20.00 v input external delay
+     1    0.01    0.00    0.00   20.00 v dco (in)
+                                         dco (net)
+                  0.00    0.00   20.00 v input1/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     2    0.09    0.50    2.36   22.36 v input1/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         net1 (net)
+                  0.25    0.00   22.36 v ringosc/dco (ring_osc2x13)
+     1    0.04    0.33   20.98   43.33 v ringosc/clockp[1] (ring_osc2x13)
+                                         net36 (net)
+                  0.66    0.00   43.33 v output36/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.03    0.32    2.39   45.72 v output36/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         clockp[1] (net)
+                  0.32    0.00   45.72 v clockp[1] (out)
+                                 45.72   data arrival time
+
+                  0.00  100.00  100.00   clock osc (rise edge)
+                          0.00  100.00   clock network delay (ideal)
+                          0.00  100.00   clock reconvergence pessimism
+                        -20.00   80.00   output external delay
+                                 80.00   data required time
+-----------------------------------------------------------------------------
+                                 80.00   data required time
+                                -45.72   data arrival time
+-----------------------------------------------------------------------------
+                                 34.28   slack (MET)
 
 
 
@@ -62,7 +146,7 @@ resizer report_check_types -max_slew -max_cap -max_fanout -violators
 ==========================================================================
 resizer max_slew_check_slack
 --------------------------------------------------------------------------
-4.584709167480469
+4.028842926025391
 
 ==========================================================================
 resizer max_slew_check_limit
@@ -72,7 +156,7 @@ resizer max_slew_check_limit
 ==========================================================================
 resizer max_slew_check_slack_limit
 --------------------------------------------------------------------------
-0.8817
+0.7748
 
 ==========================================================================
 resizer max_fanout_check_slack
@@ -87,7 +171,7 @@ resizer max_fanout_check_limit
 ==========================================================================
 resizer max_capacitance_check_slack
 --------------------------------------------------------------------------
-0.6289047002792358
+0.6242824196815491
 
 ==========================================================================
 resizer max_capacitance_check_limit
@@ -97,7 +181,7 @@ resizer max_capacitance_check_limit
 ==========================================================================
 resizer max_capacitance_check_slack_limit
 --------------------------------------------------------------------------
-0.8849
+0.8784
 
 ==========================================================================
 resizer max_slew_violation_count
@@ -152,17 +236,17 @@ resizer critical path source clock latency min path
 ==========================================================================
 resizer critical path delay
 --------------------------------------------------------------------------
--1
+45.7234
 
 ==========================================================================
 resizer critical path slack
 --------------------------------------------------------------------------
-0
+34.2766
 
 ==========================================================================
 resizer slack div critical path delay
 --------------------------------------------------------------------------
-0.000000
+74.965116
 
 ==========================================================================
 resizer report_power
@@ -171,10 +255,10 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          7.50e-05   2.02e-05   5.25e-09   9.53e-05 100.0%
-Clock                  0.00e+00   0.00e+00   1.57e-08   1.57e-08   0.0%
+Combinational          1.48e-05   5.26e-06   5.25e-09   2.00e-05  99.9%
+Clock                  0.00e+00   0.00e+00   1.59e-08   1.59e-08   0.1%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  7.50e-05   2.02e-05   2.10e-08   9.53e-05 100.0%
-                          78.7%      21.2%       0.0%
+Total                  1.48e-05   5.26e-06   2.12e-08   2.00e-05 100.0%
+                          73.6%      26.3%       0.1%

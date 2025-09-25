@@ -10,4 +10,4 @@ read_spef ./results/gf180/pll_ring_osc2x13/base/6_final.spef
 Generating abstract views
 write_timing_model ./results/gf180/pll_ring_osc2x13/base/ring_osc2x13_typ.lib
 write_abstract_lef -bloat_occupied_layers ./results/gf180/pll_ring_osc2x13/base/ring_osc2x13.lef
-Elapsed time: 0:00.66[h:]min:sec. CPU time: user 0.56 sys 0.18 (111%). Peak memory: 126392KB.
+Elapsed time: 0:00.74[h:]min:sec. CPU time: user 0.71 sys 0.15 (116%). Peak memory: 126748KB.

@@ -1,7 +1,7 @@
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
 Using ABC speed script.
 Extracting clock period from SDC file: ./results/gf180/pll_digital_pll_controller/base/clock_period.txt
-Setting clock period to 20
+Setting clock period to 100
 1. Executing RTLIL frontend.
 2. Executing HIERARCHY pass (managing design hierarchy).
 2.1. Analyzing design hierarchy..
@@ -209,7 +209,7 @@ Setting clock period to 20
 12.15. Executing OPT_EXPR pass (perform const folding).
 12.16. Finished fast OPT passes. (There is nothing left to do.)
 13. Executing SETUNDEF pass (replace undef values with defined constants).
-abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/scripts/abc_speed.script -liberty ./objects/gf180/pll_digital_pll_controller/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib -constr ./objects/gf180/pll_digital_pll_controller/base/abc.constr -dont_use *_1 -D 20
+abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/scripts/abc_speed.script -liberty ./objects/gf180/pll_digital_pll_controller/base/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib -constr ./objects/gf180/pll_digital_pll_controller/base/abc.constr -dont_use *_1 -D 100
 14. Executing ABC pass (technology mapping using ABC).
 14.1. Extracting gate netlist of module `\digital_pll_controller' to `<abc-temp-dir>/input.blif'..
 14.1.1. Executing ABC.
@@ -224,7 +224,7 @@ abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/s
 21.1. Executing BMUXMAP pass.
 21.2. Executing DEMUXMAP pass.
 exec cp /home/pvc/openroad/Digital-PLL/openroad/digital_pll/digital_pll_controller/constraint.sdc ./results/gf180/pll_digital_pll_controller/base/1_synth.sdc
-End of script. Logfile hash: 8c73f1d584, CPU: user 0.53s system 0.03s, MEM: 71.63 MB peak
+End of script. Logfile hash: dd797a4f9d, CPU: user 0.63s system 0.04s, MEM: 71.79 MB peak
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
-Time spent: 37% 2x abc (0 sec), 10% 30x opt_expr (0 sec), ...
-Elapsed time: 0:00.88[h:]min:sec. CPU time: user 0.87 sys 0.06 (106%). Peak memory: 74916KB.
+Time spent: 33% 2x abc (0 sec), 14% 1x extract_fa (0 sec), ...
+Elapsed time: 0:00.97[h:]min:sec. CPU time: user 0.95 sys 0.11 (109%). Peak memory: 75128KB.

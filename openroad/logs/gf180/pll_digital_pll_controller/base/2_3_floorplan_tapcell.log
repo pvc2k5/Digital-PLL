@@ -8,6 +8,6 @@ read_db ./results/gf180/pll_digital_pll_controller/base/2_2_floorplan_macro.odb
 [WARNING TAP-0014] endcap_cpp option is deprecated.
 [INFO TAP-0004] Inserted 80 endcaps.
 [INFO TAP-0005] Inserted 21 tapcells.
-Elapsed time: 0:00.62[h:]min:sec. CPU time: user 0.61 sys 0.05 (108%). Peak memory: 123932KB.
+Elapsed time: 0:00.59[h:]min:sec. CPU time: user 0.61 sys 0.04 (110%). Peak memory: 124076KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
 2_3_floorplan_tapcell              0            121 e62a55fa0435f36074c0

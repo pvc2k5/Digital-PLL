@@ -32,23 +32,17 @@ No paths found.
 ==========================================================================
 global place report_checks -unconstrained
 --------------------------------------------------------------------------
-Startpoint: pll_control (rising edge-triggered flip-flop)
-Endpoint: output36/Z (internal pin)
+Startpoint: osc (clock source 'osc')
+Endpoint: pll_control (rising edge-triggered flip-flop)
 Path Group: unconstrained
 Path Type: max
 
 Fanout     Cap    Slew   Delay    Time   Description
 -----------------------------------------------------------------------------
-                  0.00    0.00    0.00 ^ pll_control/clock (digital_pll_controller)
-     1    0.08    0.61    4.55    4.55 ^ pll_control/trim[13] (digital_pll_controller)
-                                         otrim[13] (net)
-                  0.61    0.00    4.55 ^ ringosc/trim[13] (ring_osc2x13)
-     1    0.01    0.22   17.61   22.16 v ringosc/clockp[1] (ring_osc2x13)
-                                         net36 (net)
-                  0.44    0.00   22.16 v output36/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     0    0.01    0.20    2.19   24.35 v output36/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         clockp[1] (net)
-                                 24.35   data arrival time
+     1    0.00    0.00    0.00   50.00 v osc (in)
+                                         osc (net)
+                  0.00    0.00   50.00 v pll_control/osc (digital_pll_controller)
+                                 50.00   data arrival time
 -----------------------------------------------------------------------------
 (Path is unconstrained)
 
@@ -61,10 +55,10 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          7.50e-05   2.02e-05   5.25e-09   9.53e-05 100.0%
-Clock                  0.00e+00   0.00e+00   1.57e-08   1.57e-08   0.0%
+Combinational          1.48e-05   5.26e-06   5.25e-09   2.00e-05  99.9%
+Clock                  0.00e+00   0.00e+00   1.59e-08   1.59e-08   0.1%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  7.50e-05   2.02e-05   2.10e-08   9.53e-05 100.0%
-                          78.7%      21.2%       0.0%
+Total                  1.48e-05   5.26e-06   2.12e-08   2.00e-05 100.0%
+                          73.6%      26.3%       0.1%

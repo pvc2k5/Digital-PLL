@@ -29,9 +29,9 @@ Report metrics stage 3, resizer...
 ==========================================================================
 resizer report_design_area
 --------------------------------------------------------------------------
-Design area 45216 u^2 20% utilization.
-Instance count before 644, after 644
+Design area 49697 u^2 22% utilization.
+Instance count before 652, after 652
 Pin count before 165, after 165
-Elapsed time: 0:00.85[h:]min:sec. CPU time: user 0.73 sys 0.26 (116%). Peak memory: 144832KB.
+Elapsed time: 0:00.89[h:]min:sec. CPU time: user 0.73 sys 0.32 (118%). Peak memory: 145148KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-3_4_place_resized                  0            141 f1474a5993e9e702321d
+3_4_place_resized                  0            141 bce70fb40108f0ffa28f
