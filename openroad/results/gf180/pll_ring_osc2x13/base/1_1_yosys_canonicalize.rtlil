@@ -15531,36 +15531,140 @@ module \gf180mcu_fd_sc_mcu7t5v0__xor3_4
 end
 attribute \hdlname "ring_osc2x13"
 attribute \top 1
-attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:160.1-271.10"
+attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:160.1-297.10"
 module \ring_osc2x13
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:227.21-227.32"
-  wire $eq$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:227$2426_Y
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225.21-225.27"
-  wire $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2423_Y
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225.30-225.37"
-  wire $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2424_Y
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:222.16-222.17"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253.21-253.32"
+  wire $eq$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253$2426_Y
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251.21-251.27"
+  wire $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2423_Y
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251.30-251.37"
+  wire $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2424_Y
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:248.16-248.17"
   wire width 2 \c
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:166.17-166.23"
-  wire width 2 output 6 \clockp
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:221.17-221.18"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:176.18-176.24"
+  wire width 2 output 56 \clockp
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:247.17-247.18"
   wire width 13 \d
   attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:163.11-163.14"
   wire input 3 \dco
   attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:162.11-162.17"
   wire input 2 \enable
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:164.18-164.26"
-  wire width 26 input 4 \ext_trim
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:223.10-223.16"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253.43-253.51"
+  wire \ext_trim
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:164.11-164.21"
+  wire input 4 \ext_trim_0
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:164.29-164.39"
+  wire input 5 \ext_trim_1
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:166.11-166.22"
+  wire input 14 \ext_trim_10
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:166.30-166.41"
+  wire input 15 \ext_trim_11
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:166.49-166.60"
+  wire input 16 \ext_trim_12
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:166.68-166.79"
+  wire input 17 \ext_trim_13
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:166.87-166.98"
+  wire input 18 \ext_trim_14
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:167.11-167.22"
+  wire input 19 \ext_trim_15
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:167.30-167.41"
+  wire input 20 \ext_trim_16
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:167.49-167.60"
+  wire input 21 \ext_trim_17
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:167.68-167.79"
+  wire input 22 \ext_trim_18
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:167.87-167.98"
+  wire input 23 \ext_trim_19
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:164.47-164.57"
+  wire input 6 \ext_trim_2
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:168.11-168.22"
+  wire input 24 \ext_trim_20
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:168.30-168.41"
+  wire input 25 \ext_trim_21
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:168.49-168.60"
+  wire input 26 \ext_trim_22
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:168.68-168.79"
+  wire input 27 \ext_trim_23
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:168.87-168.98"
+  wire input 28 \ext_trim_24
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:169.11-169.22"
+  wire input 29 \ext_trim_25
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:164.65-164.75"
+  wire input 7 \ext_trim_3
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:164.83-164.93"
+  wire input 8 \ext_trim_4
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:165.11-165.21"
+  wire input 9 \ext_trim_5
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:165.29-165.39"
+  wire input 10 \ext_trim_6
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:165.47-165.57"
+  wire input 11 \ext_trim_7
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:165.65-165.75"
+  wire input 12 \ext_trim_8
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:165.83-165.93"
+  wire input 13 \ext_trim_9
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:249.10-249.16"
   wire \ireset
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:224.17-224.22"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:250.17-250.22"
   wire width 26 \itrim
   attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:161.11-161.16"
   wire input 1 \reset
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:165.18-165.22"
-  wire width 26 input 5 \trim
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:227.21-227.32"
-  cell $eq $eq$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:227$2426
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253.36-253.40"
+  wire \trim
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:170.11-170.17"
+  wire input 30 \trim_0
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:170.25-170.31"
+  wire input 31 \trim_1
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:172.11-172.18"
+  wire input 40 \trim_10
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:172.26-172.33"
+  wire input 41 \trim_11
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:172.41-172.48"
+  wire input 42 \trim_12
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:172.56-172.63"
+  wire input 43 \trim_13
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:172.71-172.78"
+  wire input 44 \trim_14
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:173.11-173.18"
+  wire input 45 \trim_15
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:173.26-173.33"
+  wire input 46 \trim_16
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:173.41-173.48"
+  wire input 47 \trim_17
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:173.56-173.63"
+  wire input 48 \trim_18
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:173.71-173.78"
+  wire input 49 \trim_19
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:170.39-170.45"
+  wire input 32 \trim_2
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:174.11-174.18"
+  wire input 50 \trim_20
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:174.26-174.33"
+  wire input 51 \trim_21
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:174.41-174.48"
+  wire input 52 \trim_22
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:174.56-174.63"
+  wire input 53 \trim_23
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:174.71-174.78"
+  wire input 54 \trim_24
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:175.11-175.18"
+  wire input 55 \trim_25
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:170.53-170.59"
+  wire input 33 \trim_3
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:170.67-170.73"
+  wire input 34 \trim_4
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:171.11-171.17"
+  wire input 35 \trim_5
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:171.25-171.31"
+  wire input 36 \trim_6
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:171.39-171.45"
+  wire input 37 \trim_7
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:171.53-171.59"
+  wire input 38 \trim_8
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:171.67-171.73"
+  wire input 39 \trim_9
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253.21-253.32"
+  cell $eq $eq$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253$2426
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
@@ -15568,159 +15672,160 @@ module \ring_osc2x13
     parameter \Y_WIDTH 1
     connect \A \dco
     connect \B 1'0
-    connect \Y $eq$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:227$2426_Y
+    connect \Y $eq$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253$2426_Y
   end
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225.21-225.27"
-  cell $not $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2423
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251.21-251.27"
+  cell $not $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2423
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \reset
-    connect \Y $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2423_Y
+    connect \Y $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2423_Y
   end
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225.30-225.37"
-  cell $not $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2424
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251.30-251.37"
+  cell $not $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2424
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \Y_WIDTH 1
     connect \A \enable
-    connect \Y $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2424_Y
+    connect \Y $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2424_Y
   end
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225.21-225.37"
-  cell $or $or$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2425
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251.21-251.37"
+  cell $or $or$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2425
     parameter \A_SIGNED 0
     parameter \A_WIDTH 1
     parameter \B_SIGNED 0
     parameter \B_WIDTH 1
     parameter \Y_WIDTH 1
-    connect \A $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2423_Y
-    connect \B $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:225$2424_Y
+    connect \A $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2423_Y
+    connect \B $not$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:251$2424_Y
     connect \Y \ireset
   end
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:227.20-227.51"
-  cell $mux $ternary$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:227$2427
-    parameter \WIDTH 26
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253.20-253.51"
+  cell $mux $ternary$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253$2427
+    parameter \WIDTH 1
     connect \A \ext_trim
     connect \B \trim
-    connect \S $eq$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:227$2426_Y
-    connect \Y \itrim
+    connect \S $eq$/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:253$2426_Y
+    connect \Y \itrim [0]
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[0].id
     connect \in \d [0]
     connect \out \d [1]
-    connect \trim { \itrim [13] \itrim [0] }
+    connect \trim { 1'0 \itrim [0] }
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[10].id
     connect \in \d [10]
     connect \out \d [11]
-    connect \trim { \itrim [23] \itrim [10] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[11].id
     connect \in \d [11]
     connect \out \d [12]
-    connect \trim { \itrim [24] \itrim [11] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[1].id
     connect \in \d [1]
     connect \out \d [2]
-    connect \trim { \itrim [14] \itrim [1] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[2].id
     connect \in \d [2]
     connect \out \d [3]
-    connect \trim { \itrim [15] \itrim [2] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[3].id
     connect \in \d [3]
     connect \out \d [4]
-    connect \trim { \itrim [16] \itrim [3] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[4].id
     connect \in \d [4]
     connect \out \d [5]
-    connect \trim { \itrim [17] \itrim [4] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[5].id
     connect \in \d [5]
     connect \out \d [6]
-    connect \trim { \itrim [18] \itrim [5] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[6].id
     connect \in \d [6]
     connect \out \d [7]
-    connect \trim { \itrim [19] \itrim [6] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[7].id
     connect \in \d [7]
     connect \out \d [8]
-    connect \trim { \itrim [20] \itrim [7] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[8].id
     connect \in \d [8]
     connect \out \d [9]
-    connect \trim { \itrim [21] \itrim [8] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:233.18-237.7"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:259.18-263.7"
   cell \delay_stage \dstage[9].id
     connect \in \d [9]
     connect \out \d [10]
-    connect \trim { \itrim [22] \itrim [9] }
+    connect \trim 2'00
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:252.39-255.6"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:278.39-281.6"
   cell \gf180mcu_fd_sc_mcu7t5v0__clkinv_2 \ibufp00
     connect \I \d [0]
     connect \ZN \c [0]
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:256.39-259.6"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:282.39-285.6"
   cell \gf180mcu_fd_sc_mcu7t5v0__clkinv_8 \ibufp01
     connect \I \c [0]
     connect \ZN \clockp [0]
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:260.39-263.6"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:286.39-289.6"
   cell \gf180mcu_fd_sc_mcu7t5v0__clkinv_2 \ibufp10
     connect \I \d [6]
     connect \ZN \c [1]
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:264.39-267.6"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:290.39-293.6"
   cell \gf180mcu_fd_sc_mcu7t5v0__clkinv_8 \ibufp11
     connect \I \c [1]
     connect \ZN \clockp [1]
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:243.17-248.6"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:269.17-274.6"
   cell \start_stage \iss
     connect \in \d [12]
     connect \out \d [0]
     connect \reset \ireset
-    connect \trim { \itrim [25] \itrim [12] }
+    connect \trim 2'00
   end
+  connect \itrim [25:1] 25'0000000000000000000000000
 end
 attribute \hdlname "start_stage"
 attribute \src "/home/pvc/openroad/Digital-PLL/RTL/ring_osc2x13_mod.v:80.1-144.10"

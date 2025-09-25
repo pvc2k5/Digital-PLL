@@ -5,7 +5,7 @@ current_design digital_pll
 ###############################################################################
 # Timing Constraints
 ###############################################################################
-create_clock -name osc -period 62.7079 [get_ports {osc}]
+create_clock -name osc -period 52.4548 [get_ports {osc}]
 set_input_delay 20.0000 -clock [get_clocks {osc}] -add_delay [get_ports {dco}]
 set_input_delay 20.0000 -clock [get_clocks {osc}] -add_delay [get_ports {div[0]}]
 set_input_delay 20.0000 -clock [get_clocks {osc}] -add_delay [get_ports {div[1]}]

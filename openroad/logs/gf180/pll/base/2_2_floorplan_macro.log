@@ -12,17 +12,17 @@ Die Area: (0.00, 0.00) (500.00, 500.00),  Floorplan Area: (10.08, 11.76) (490.00
 	Number of std cell instances: 0
 	Area of std cell instances: 0.00
 	Number of macros: 2
-	Area of macros: 46851.63
+	Area of macros: 42453.37
 	Halo width: 20.00
 	Halo height: 20.00
-	Area of macros with halos: 74487.23
-	Area of std cell instances + Area of macros: 46851.63
+	Area of macros with halos: 68780.56
+	Area of std cell instances + Area of macros: 42453.37
 	Floorplan area: 229516.94
-	Design Utilization: 0.20
+	Design Utilization: 0.18
 	Floorplan Utilization: 0.00
 	Manufacturing Grid: 10
 
 [WARNING MPL-0025] Design has no standard cells!
-Elapsed time: 0:01.36[h:]min:sec. CPU time: user 11.85 sys 0.09 (876%). Peak memory: 127344KB.
+Elapsed time: 0:01.34[h:]min:sec. CPU time: user 11.23 sys 0.07 (839%). Peak memory: 126748KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_2_floorplan_macro                1            124 e183362f747afb542fcb
+2_2_floorplan_macro                1            123 f8ff3ba15df2b3b25a0d

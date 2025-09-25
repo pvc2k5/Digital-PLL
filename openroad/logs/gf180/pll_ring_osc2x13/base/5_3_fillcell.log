@@ -6,7 +6,7 @@ Components of this program may be licensed under more restrictive licenses which
 read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
 read_db ./results/gf180/pll_ring_osc2x13/base/5_2_route.odb
 filler_placement "gf180mcu_fd_sc_mcu7t5v0__fill_64 gf180mcu_fd_sc_mcu7t5v0__fill_32 gf180mcu_fd_sc_mcu7t5v0__fill_16 gf180mcu_fd_sc_mcu7t5v0__fill_8 gf180mcu_fd_sc_mcu7t5v0__fill_4 gf180mcu_fd_sc_mcu7t5v0__fill_2 gf180mcu_fd_sc_mcu7t5v0__fill_1"
-[INFO DPL-0001] Placed 419 filler instances.
-Elapsed time: 0:00.58[h:]min:sec. CPU time: user 0.58 sys 0.05 (110%). Peak memory: 126156KB.
+[INFO DPL-0001] Placed 334 filler instances.
+Elapsed time: 0:00.76[h:]min:sec. CPU time: user 0.77 sys 0.06 (109%). Peak memory: 125968KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-5_3_fillcell                       0            123 8bb8adc72c91b9fad54a
+5_3_fillcell                       0            123 5b2b6a641c11c4842a77

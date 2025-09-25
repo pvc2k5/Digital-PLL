@@ -45,8 +45,8 @@ Report metrics stage 2, floorplan final...
 ==========================================================================
 floorplan final report_design_area
 --------------------------------------------------------------------------
-Design area 46852 u^2 20% utilization.
+Design area 42453 u^2 18% utilization.
 source /home/pvc/openroad/Digital-PLL/openroad/digital_pll/io.tcl
-Elapsed time: 0:00.74[h:]min:sec. CPU time: user 0.69 sys 0.14 (113%). Peak memory: 146588KB.
+Elapsed time: 0:00.77[h:]min:sec. CPU time: user 0.63 sys 0.23 (111%). Peak memory: 145988KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_1_floorplan                      0            143 cc90ed705b6acc85eeae
+2_1_floorplan                      0            142 249628abd20d62ed11c2

@@ -16,7 +16,7 @@ Using 2 tracks default min distance between IO pins.
 [INFO PPL-0004] Number of I/O w/o sink    0
 [INFO PPL-0005] Slots per section         200
 [INFO PPL-0008] Successfully assigned pins to sections.
-[INFO PPL-0012] I/O nets HPWL: 5319.89 um.
-Elapsed time: 0:00.60[h:]min:sec. CPU time: user 0.62 sys 0.04 (110%). Peak memory: 126436KB.
+[INFO PPL-0012] I/O nets HPWL: 5079.09 um.
+Elapsed time: 0:00.70[h:]min:sec. CPU time: user 0.70 sys 0.06 (108%). Peak memory: 126168KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-3_2_place_iop                      0            123 f8d9f03193b8867e4e7c
+3_2_place_iop                      0            123 c9ebcee91c7f81a79a83

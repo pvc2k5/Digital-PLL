@@ -2,7 +2,7 @@
 autoidx 2423
 attribute \hdlname "digital_pll"
 attribute \top 1
-attribute \src "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:20.1-62.10"
+attribute \src "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:20.1-112.10"
 module \digital_pll
   attribute \src "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:39.18-39.24"
   wire width 2 output 4 \clockp
@@ -21,7 +21,7 @@ module \digital_pll
   attribute \src "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:32.12-32.18"
   wire input 1 \resetb
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:52.28-60.6"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:102.28-110.6"
   cell \digital_pll_controller \pll_control
     connect \clock \clockp [0]
     connect \dco \dco
@@ -32,14 +32,64 @@ module \digital_pll
     connect \trim \otrim
   end
   attribute \module_not_derived 1
-  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:43.18-50.6"
+  attribute \src "/home/pvc/openroad/Digital-PLL/RTL/digital_pll.v:43.18-100.6"
   cell \ring_osc2x13 \ringosc
     connect \clockp \clockp
     connect \dco \dco
     connect \enable \enable
-    connect \ext_trim \ext_trim
+    connect \ext_trim_0 \ext_trim [0]
+    connect \ext_trim_1 \ext_trim [1]
+    connect \ext_trim_10 \ext_trim [10]
+    connect \ext_trim_11 \ext_trim [11]
+    connect \ext_trim_12 \ext_trim [12]
+    connect \ext_trim_13 \ext_trim [13]
+    connect \ext_trim_14 \ext_trim [14]
+    connect \ext_trim_15 \ext_trim [15]
+    connect \ext_trim_16 \ext_trim [16]
+    connect \ext_trim_17 \ext_trim [17]
+    connect \ext_trim_18 \ext_trim [18]
+    connect \ext_trim_19 \ext_trim [19]
+    connect \ext_trim_2 \ext_trim [2]
+    connect \ext_trim_20 \ext_trim [20]
+    connect \ext_trim_21 \ext_trim [21]
+    connect \ext_trim_22 \ext_trim [22]
+    connect \ext_trim_23 \ext_trim [23]
+    connect \ext_trim_24 \ext_trim [24]
+    connect \ext_trim_25 \ext_trim [25]
+    connect \ext_trim_3 \ext_trim [3]
+    connect \ext_trim_4 \ext_trim [4]
+    connect \ext_trim_5 \ext_trim [5]
+    connect \ext_trim_6 \ext_trim [6]
+    connect \ext_trim_7 \ext_trim [7]
+    connect \ext_trim_8 \ext_trim [8]
+    connect \ext_trim_9 \ext_trim [9]
     connect \reset \resetb
-    connect \trim \otrim
+    connect \trim_0 \otrim [0]
+    connect \trim_1 \otrim [1]
+    connect \trim_10 \otrim [10]
+    connect \trim_11 \otrim [11]
+    connect \trim_12 \otrim [12]
+    connect \trim_13 \otrim [13]
+    connect \trim_14 \otrim [14]
+    connect \trim_15 \otrim [15]
+    connect \trim_16 \otrim [16]
+    connect \trim_17 \otrim [17]
+    connect \trim_18 \otrim [18]
+    connect \trim_19 \otrim [19]
+    connect \trim_2 \otrim [2]
+    connect \trim_20 \otrim [20]
+    connect \trim_21 \otrim [21]
+    connect \trim_22 \otrim [22]
+    connect \trim_23 \otrim [23]
+    connect \trim_24 \otrim [24]
+    connect \trim_25 \otrim [25]
+    connect \trim_3 \otrim [3]
+    connect \trim_4 \otrim [4]
+    connect \trim_5 \otrim [5]
+    connect \trim_6 \otrim [6]
+    connect \trim_7 \otrim [7]
+    connect \trim_8 \otrim [8]
+    connect \trim_9 \otrim [9]
   end
 end
 attribute \liberty_cell 1
@@ -15509,16 +15559,118 @@ module \gf180mcu_fd_sc_mcu7t5v0__xor3_4
   connect \Z $auto$rtlil.cc:3237:XorGate$2419
 end
 attribute \liberty_cell 1
-attribute \area "18435.375"
+attribute \area "14290.800"
 attribute \blackbox 1
 module \ring_osc2x13
-  wire width 2 output 5 \clockp
-  attribute \capacitance "0.0055"
+  wire width 2 output 56 \clockp
+  attribute \capacitance "0.0000"
   wire input 2 \dco
-  attribute \capacitance "0.0050"
+  attribute \capacitance "0.0047"
   wire input 3 \enable
-  wire width 26 input 6 \ext_trim
-  attribute \capacitance "0.0061"
+  attribute \capacitance "0.0000"
+  wire input 4 \ext_trim_0
+  attribute \capacitance "0.0000"
+  wire input 5 \ext_trim_1
+  attribute \capacitance "0.0000"
+  wire input 6 \ext_trim_10
+  attribute \capacitance "0.0000"
+  wire input 7 \ext_trim_11
+  attribute \capacitance "0.0000"
+  wire input 8 \ext_trim_12
+  attribute \capacitance "0.0000"
+  wire input 9 \ext_trim_13
+  attribute \capacitance "0.0000"
+  wire input 10 \ext_trim_14
+  attribute \capacitance "0.0000"
+  wire input 11 \ext_trim_15
+  attribute \capacitance "0.0000"
+  wire input 12 \ext_trim_16
+  attribute \capacitance "0.0000"
+  wire input 13 \ext_trim_17
+  attribute \capacitance "0.0000"
+  wire input 14 \ext_trim_18
+  attribute \capacitance "0.0000"
+  wire input 15 \ext_trim_19
+  attribute \capacitance "0.0000"
+  wire input 16 \ext_trim_2
+  attribute \capacitance "0.0000"
+  wire input 17 \ext_trim_20
+  attribute \capacitance "0.0000"
+  wire input 18 \ext_trim_21
+  attribute \capacitance "0.0000"
+  wire input 19 \ext_trim_22
+  attribute \capacitance "0.0000"
+  wire input 20 \ext_trim_23
+  attribute \capacitance "0.0000"
+  wire input 21 \ext_trim_24
+  attribute \capacitance "0.0000"
+  wire input 22 \ext_trim_25
+  attribute \capacitance "0.0000"
+  wire input 23 \ext_trim_3
+  attribute \capacitance "0.0000"
+  wire input 24 \ext_trim_4
+  attribute \capacitance "0.0000"
+  wire input 25 \ext_trim_5
+  attribute \capacitance "0.0000"
+  wire input 26 \ext_trim_6
+  attribute \capacitance "0.0000"
+  wire input 27 \ext_trim_7
+  attribute \capacitance "0.0000"
+  wire input 28 \ext_trim_8
+  attribute \capacitance "0.0000"
+  wire input 29 \ext_trim_9
+  attribute \capacitance "0.0041"
   wire input 1 \reset
-  wire width 26 input 4 \trim
+  attribute \capacitance "0.0000"
+  wire input 30 \trim_0
+  attribute \capacitance "0.0000"
+  wire input 31 \trim_1
+  attribute \capacitance "0.0000"
+  wire input 32 \trim_10
+  attribute \capacitance "0.0000"
+  wire input 33 \trim_11
+  attribute \capacitance "0.0000"
+  wire input 34 \trim_12
+  attribute \capacitance "0.0000"
+  wire input 35 \trim_13
+  attribute \capacitance "0.0000"
+  wire input 36 \trim_14
+  attribute \capacitance "0.0000"
+  wire input 37 \trim_15
+  attribute \capacitance "0.0000"
+  wire input 38 \trim_16
+  attribute \capacitance "0.0000"
+  wire input 39 \trim_17
+  attribute \capacitance "0.0000"
+  wire input 40 \trim_18
+  attribute \capacitance "0.0000"
+  wire input 41 \trim_19
+  attribute \capacitance "0.0000"
+  wire input 42 \trim_2
+  attribute \capacitance "0.0000"
+  wire input 43 \trim_20
+  attribute \capacitance "0.0000"
+  wire input 44 \trim_21
+  attribute \capacitance "0.0000"
+  wire input 45 \trim_22
+  attribute \capacitance "0.0000"
+  wire input 46 \trim_23
+  attribute \capacitance "0.0000"
+  wire input 47 \trim_24
+  attribute \capacitance "0.0000"
+  wire input 48 \trim_25
+  attribute \capacitance "0.0000"
+  wire input 49 \trim_3
+  attribute \capacitance "0.0000"
+  wire input 50 \trim_4
+  attribute \capacitance "0.0000"
+  wire input 51 \trim_5
+  attribute \capacitance "0.0000"
+  wire input 52 \trim_6
+  attribute \capacitance "0.0000"
+  wire input 53 \trim_7
+  attribute \capacitance "0.0000"
+  wire input 54 \trim_8
+  attribute \capacitance "0.0000"
+  wire input 55 \trim_9
 end

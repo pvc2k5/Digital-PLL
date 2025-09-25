@@ -179,6 +179,6 @@ Report metrics stage 3, global place...
 global place report_design_area
 --------------------------------------------------------------------------
 Design area 9000 u^2 36% utilization.
-Elapsed time: 0:01.51[h:]min:sec. CPU time: user 3.36 sys 0.77 (273%). Peak memory: 191612KB.
+Elapsed time: 0:02.02[h:]min:sec. CPU time: user 6.17 sys 0.80 (345%). Peak memory: 191176KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-3_3_place_gp                       1            187 65fa26d922046335edcf
+3_3_place_gp                       2            186 65fa26d922046335edcf

@@ -82,7 +82,7 @@ Number of nets:           246
 #macroValidViaAp       = 0
 #macroNoAp             = 0
 [INFO DRT-0166] Complete pin access.
-[INFO DRT-0267] cpu time = 00:00:05, elapsed time = 00:00:00, memory = 124.22 (MB), peak = 124.22 (MB)
+[INFO DRT-0267] cpu time = 00:00:06, elapsed time = 00:00:00, memory = 123.97 (MB), peak = 123.97 (MB)
 global_route -congestion_report_file ./reports/gf180/pll_digital_pll_controller/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
 [INFO GRT-0020] Min routing layer: Metal2
 [INFO GRT-0021] Max routing layer: Metal4
@@ -204,6 +204,6 @@ Design area 9176 u^2 37% utilization.
 [INFO FLW-0008] Clock ring_clk period 7.748
 [INFO FLW-0009] Clock ring_clk slack 11.844
 [INFO FLW-0011] Path endpoint path count 73
-Elapsed time: 0:02.35[h:]min:sec. CPU time: user 7.13 sys 1.42 (363%). Peak memory: 202196KB.
+Elapsed time: 0:02.69[h:]min:sec. CPU time: user 8.15 sys 1.27 (349%). Peak memory: 201456KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-5_1_grt                            2            197 66580ed1420e4f2954af
+5_1_grt                            2            196 66580ed1420e4f2954af

@@ -12,18 +12,18 @@ wns max 0.00
 ==========================================================================
 floorplan final report_worst_slack
 --------------------------------------------------------------------------
-worst slack max 39.15
+worst slack max 50.02
 
 ==========================================================================
 floorplan final report_clock_min_period
 --------------------------------------------------------------------------
-osc period_min = 60.85 fmax = 16.43
+osc period_min = 49.98 fmax = 20.01
 
 ==========================================================================
 floorplan final report_checks -path_delay min
 --------------------------------------------------------------------------
-Startpoint: ext_trim[25] (input port clocked by osc)
-Endpoint: clockp[0] (output port clocked by osc)
+Startpoint: enable (input port clocked by osc)
+Endpoint: clockp[1] (output port clocked by osc)
 Path Group: osc
 Path Type: min
 
@@ -32,13 +32,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock osc (rise edge)
                           0.00    0.00   clock network delay (ideal)
                          20.00   20.00 ^ input external delay
-     1    0.01    0.00    0.00   20.00 ^ ext_trim[25] (in)
-                                         ext_trim[25] (net)
-                  0.00    0.00   20.00 ^ ringosc/ext_trim[25] (ring_osc2x13)
-     2    0.02    0.21    5.76   25.76 ^ ringosc/clockp[0] (ring_osc2x13)
-                                         clockp[0] (net)
-                  0.42    0.00   25.76 ^ clockp[0] (out)
-                                 25.76   data arrival time
+     2    0.01    0.00    0.00   20.00 ^ enable (in)
+                                         enable (net)
+                  0.00    0.00   20.00 ^ ringosc/enable (ring_osc2x13)
+     1    0.00    0.09    7.14   27.14 ^ ringosc/clockp[1] (ring_osc2x13)
+                                         clockp[1] (net)
+                  0.17    0.00   27.14 ^ clockp[1] (out)
+                                 27.14   data arrival time
 
                   0.00    0.00    0.00   clock osc (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -47,17 +47,17 @@ Fanout     Cap    Slew   Delay    Time   Description
                                 -20.00   data required time
 -----------------------------------------------------------------------------
                                 -20.00   data required time
-                                -25.76   data arrival time
+                                -27.14   data arrival time
 -----------------------------------------------------------------------------
-                                 45.76   slack (MET)
+                                 47.14   slack (MET)
 
 
 
 ==========================================================================
 floorplan final report_checks -path_delay max
 --------------------------------------------------------------------------
-Startpoint: dco (input port clocked by osc)
-Endpoint: clockp[1] (output port clocked by osc)
+Startpoint: resetb (input port clocked by osc)
+Endpoint: clockp[0] (output port clocked by osc)
 Path Group: osc
 Path Type: max
 
@@ -66,13 +66,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock osc (rise edge)
                           0.00    0.00   clock network delay (ideal)
                          20.00   20.00 ^ input external delay
-     2    0.01    0.00    0.00   20.00 ^ dco (in)
-                                         dco (net)
-                  0.00    0.00   20.00 ^ ringosc/dco (ring_osc2x13)
-     1    0.01    0.21   20.85   40.85 v ringosc/clockp[1] (ring_osc2x13)
-                                         clockp[1] (net)
-                  0.41    0.00   40.85 v clockp[1] (out)
-                                 40.85   data arrival time
+     2    0.01    0.00    0.00   20.00 ^ resetb (in)
+                                         resetb (net)
+                  0.00    0.00   20.00 ^ ringosc/reset (ring_osc2x13)
+     2    0.02    0.24    9.98   29.98 v ringosc/clockp[0] (ring_osc2x13)
+                                         clockp[0] (net)
+                  0.49    0.00   29.98 v clockp[0] (out)
+                                 29.98   data arrival time
 
                   0.00  100.00  100.00   clock osc (rise edge)
                           0.00  100.00   clock network delay (ideal)
@@ -81,17 +81,17 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  80.00   data required time
 -----------------------------------------------------------------------------
                                  80.00   data required time
-                                -40.85   data arrival time
+                                -29.98   data arrival time
 -----------------------------------------------------------------------------
-                                 39.15   slack (MET)
+                                 50.02   slack (MET)
 
 
 
 ==========================================================================
 floorplan final report_checks -unconstrained
 --------------------------------------------------------------------------
-Startpoint: dco (input port clocked by osc)
-Endpoint: clockp[1] (output port clocked by osc)
+Startpoint: resetb (input port clocked by osc)
+Endpoint: clockp[0] (output port clocked by osc)
 Path Group: osc
 Path Type: max
 
@@ -100,13 +100,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock osc (rise edge)
                           0.00    0.00   clock network delay (ideal)
                          20.00   20.00 ^ input external delay
-     2    0.01    0.00    0.00   20.00 ^ dco (in)
-                                         dco (net)
-                  0.00    0.00   20.00 ^ ringosc/dco (ring_osc2x13)
-     1    0.01    0.21   20.85   40.85 v ringosc/clockp[1] (ring_osc2x13)
-                                         clockp[1] (net)
-                  0.41    0.00   40.85 v clockp[1] (out)
-                                 40.85   data arrival time
+     2    0.01    0.00    0.00   20.00 ^ resetb (in)
+                                         resetb (net)
+                  0.00    0.00   20.00 ^ ringosc/reset (ring_osc2x13)
+     2    0.02    0.24    9.98   29.98 v ringosc/clockp[0] (ring_osc2x13)
+                                         clockp[0] (net)
+                  0.49    0.00   29.98 v clockp[0] (out)
+                                 29.98   data arrival time
 
                   0.00  100.00  100.00   clock osc (rise edge)
                           0.00  100.00   clock network delay (ideal)
@@ -115,9 +115,9 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  80.00   data required time
 -----------------------------------------------------------------------------
                                  80.00   data required time
-                                -40.85   data arrival time
+                                -29.98   data arrival time
 -----------------------------------------------------------------------------
-                                 39.15   slack (MET)
+                                 50.02   slack (MET)
 
 
 

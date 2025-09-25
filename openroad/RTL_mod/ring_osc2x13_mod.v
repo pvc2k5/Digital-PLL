@@ -157,22 +157,48 @@ endmodule
 // Frequency of this ring oscillator under SPICE simulations at
 // nominal PVT is maximum 214 MHz (trim 0), minimum 90 MHz (trim 24).
 
-module ring_osc2x13(reset, enable, dco, ext_trim, trim, clockp);
-    input reset;
-    input enable;
-    input dco;
-    input [25:0] ext_trim;
-    input [25:0] trim;
-    output[1:0] clockp;
+module ring_osc2x13(
+    input reset,
+    input enable,
+    input dco,
+    input ext_trim_0, input ext_trim_1, input ext_trim_2, input ext_trim_3, input ext_trim_4,
+    input ext_trim_5, input ext_trim_6, input ext_trim_7, input ext_trim_8, input ext_trim_9,
+    input ext_trim_10, input ext_trim_11, input ext_trim_12, input ext_trim_13, input ext_trim_14,
+    input ext_trim_15, input ext_trim_16, input ext_trim_17, input ext_trim_18, input ext_trim_19,
+    input ext_trim_20, input ext_trim_21, input ext_trim_22, input ext_trim_23, input ext_trim_24,
+    input ext_trim_25,
+    input trim_0, input trim_1, input trim_2, input trim_3, input trim_4,
+    input trim_5, input trim_6, input trim_7, input trim_8, input trim_9,
+    input trim_10, input trim_11, input trim_12, input trim_13, input trim_14,
+    input trim_15, input trim_16, input trim_17, input trim_18, input trim_19,
+    input trim_20, input trim_21, input trim_22, input trim_23, input trim_24,
+    input trim_25,
+    output [1:0] clockp
+);
 
 `ifdef FUNCTIONAL	// i.e., behavioral model below
-
+    wire [25:0] ext_trim;
+    wire [25:0] trim;
     reg [1:0] clockp;
     reg hiclock;
     integer i;
     real delay;
     wire [5:0] bcount;
-	
+    assign ext_trim = {
+    	ext_trim_25, ext_trim_24, ext_trim_23, ext_trim_22, ext_trim_21, ext_trim_20,
+    	ext_trim_19, ext_trim_18, ext_trim_17, ext_trim_16, ext_trim_15, ext_trim_14,
+    	ext_trim_13, ext_trim_12, ext_trim_11, ext_trim_10, ext_trim_9, ext_trim_8,
+    	ext_trim_7, ext_trim_6, ext_trim_5, ext_trim_4, ext_trim_3, ext_trim_2,
+    	ext_trim_1, ext_trim_0
+    };
+    assign trim = {
+    	trim_25, trim_24, trim_23, trim_22, trim_21, trim_20,
+    	trim_19, trim_18, trim_17, trim_16, trim_15, trim_14,
+    	trim_13, trim_12, trim_11, trim_10, trim_9, trim_8,
+    	trim_7, trim_6, trim_5, trim_4, trim_3, trim_2,
+    	trim_1, trim_0
+    };
+    
     assign bcount = trim[0] + trim[1] + trim[2]
 		+ trim[3] + trim[4] + trim[5] + trim[6] + trim[7]
 		+ trim[8] + trim[9] + trim[10] + trim[11] + trim[12]

@@ -12,18 +12,18 @@ wns max 0.00
 ==========================================================================
 detailed place report_worst_slack
 --------------------------------------------------------------------------
-worst slack max 34.28
+worst slack max 45.12
 
 ==========================================================================
 detailed place report_clock_min_period
 --------------------------------------------------------------------------
-osc period_min = 65.72 fmax = 15.22
+osc period_min = 54.88 fmax = 18.22
 
 ==========================================================================
 detailed place report_checks -path_delay min
 --------------------------------------------------------------------------
-Startpoint: ext_trim[25] (input port clocked by osc)
-Endpoint: clockp[0] (output port clocked by osc)
+Startpoint: enable (input port clocked by osc)
+Endpoint: clockp[1] (output port clocked by osc)
 Path Group: osc
 Path Type: min
 
@@ -32,19 +32,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock osc (rise edge)
                           0.00    0.00   clock network delay (ideal)
                          20.00   20.00 ^ input external delay
-     1    0.02    0.00    0.00   20.00 ^ ext_trim[25] (in)
-                                         ext_trim[25] (net)
-                  0.00    0.00   20.00 ^ input25/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     1    0.01    0.12    1.88   21.88 ^ input25/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         net25 (net)
-                  0.06    0.00   21.88 ^ ringosc/ext_trim[25] (ring_osc2x13)
-     2    0.07    0.58    6.00   27.87 ^ ringosc/clockp[0] (ring_osc2x13)
-                                         net35 (net)
-                  1.17    0.00   27.87 ^ output35/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     1    0.00    0.10    1.89   29.76 ^ output35/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         clockp[0] (net)
-                  0.10    0.00   29.76 ^ clockp[0] (out)
-                                 29.76   data arrival time
+     1    0.01    0.00    0.00   20.00 ^ enable (in)
+                                         enable (net)
+                  0.00    0.00   20.00 ^ input7/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     2    0.09    0.64    2.22   22.22 ^ input7/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         net7 (net)
+                  0.32    0.00   22.22 ^ ringosc/enable (ring_osc2x13)
+     1    0.01    0.13    7.18   29.40 ^ ringosc/clockp[1] (ring_osc2x13)
+                                         net36 (net)
+                  0.25    0.00   29.40 ^ output36/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.00    0.10    1.89   31.29 ^ output36/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         clockp[1] (net)
+                  0.10    0.00   31.29 ^ clockp[1] (out)
+                                 31.29   data arrival time
 
                   0.00    0.00    0.00   clock osc (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -53,17 +53,17 @@ Fanout     Cap    Slew   Delay    Time   Description
                                 -20.00   data required time
 -----------------------------------------------------------------------------
                                 -20.00   data required time
-                                -29.76   data arrival time
+                                -31.29   data arrival time
 -----------------------------------------------------------------------------
-                                 49.76   slack (MET)
+                                 51.29   slack (MET)
 
 
 
 ==========================================================================
 detailed place report_checks -path_delay max
 --------------------------------------------------------------------------
-Startpoint: dco (input port clocked by osc)
-Endpoint: clockp[1] (output port clocked by osc)
+Startpoint: resetb (input port clocked by osc)
+Endpoint: clockp[0] (output port clocked by osc)
 Path Group: osc
 Path Type: max
 
@@ -72,19 +72,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock osc (rise edge)
                           0.00    0.00   clock network delay (ideal)
                          20.00   20.00 v input external delay
-     1    0.01    0.00    0.00   20.00 v dco (in)
-                                         dco (net)
-                  0.00    0.00   20.00 v input1/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     2    0.09    0.50    2.36   22.36 v input1/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         net1 (net)
-                  0.25    0.00   22.36 v ringosc/dco (ring_osc2x13)
-     1    0.04    0.34   20.98   43.34 v ringosc/clockp[1] (ring_osc2x13)
-                                         net36 (net)
-                  0.67    0.00   43.34 v output36/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     1    0.03    0.31    2.39   45.72 v output36/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         clockp[1] (net)
-                  0.31    0.00   45.72 v clockp[1] (out)
-                                 45.72   data arrival time
+     1    0.01    0.00    0.00   20.00 v resetb (in)
+                                         resetb (net)
+                  0.00    0.00   20.00 v input34/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     2    0.08    0.49    2.34   22.34 v input34/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         net34 (net)
+                  0.24    0.00   22.34 v ringosc/reset (ring_osc2x13)
+     2    0.08    0.48   10.21   32.55 v ringosc/clockp[0] (ring_osc2x13)
+                                         net35 (net)
+                  0.97    0.00   32.55 v output35/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.00    0.17    2.33   34.88 v output35/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         clockp[0] (net)
+                  0.17    0.00   34.88 v clockp[0] (out)
+                                 34.88   data arrival time
 
                   0.00  100.00  100.00   clock osc (rise edge)
                           0.00  100.00   clock network delay (ideal)
@@ -93,17 +93,17 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  80.00   data required time
 -----------------------------------------------------------------------------
                                  80.00   data required time
-                                -45.72   data arrival time
+                                -34.88   data arrival time
 -----------------------------------------------------------------------------
-                                 34.28   slack (MET)
+                                 45.12   slack (MET)
 
 
 
 ==========================================================================
 detailed place report_checks -unconstrained
 --------------------------------------------------------------------------
-Startpoint: dco (input port clocked by osc)
-Endpoint: clockp[1] (output port clocked by osc)
+Startpoint: resetb (input port clocked by osc)
+Endpoint: clockp[0] (output port clocked by osc)
 Path Group: osc
 Path Type: max
 
@@ -112,19 +112,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock osc (rise edge)
                           0.00    0.00   clock network delay (ideal)
                          20.00   20.00 v input external delay
-     1    0.01    0.00    0.00   20.00 v dco (in)
-                                         dco (net)
-                  0.00    0.00   20.00 v input1/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     2    0.09    0.50    2.36   22.36 v input1/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         net1 (net)
-                  0.25    0.00   22.36 v ringosc/dco (ring_osc2x13)
-     1    0.04    0.34   20.98   43.34 v ringosc/clockp[1] (ring_osc2x13)
-                                         net36 (net)
-                  0.67    0.00   43.34 v output36/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     1    0.03    0.31    2.39   45.72 v output36/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         clockp[1] (net)
-                  0.31    0.00   45.72 v clockp[1] (out)
-                                 45.72   data arrival time
+     1    0.01    0.00    0.00   20.00 v resetb (in)
+                                         resetb (net)
+                  0.00    0.00   20.00 v input34/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     2    0.08    0.49    2.34   22.34 v input34/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         net34 (net)
+                  0.24    0.00   22.34 v ringosc/reset (ring_osc2x13)
+     2    0.08    0.48   10.21   32.55 v ringosc/clockp[0] (ring_osc2x13)
+                                         net35 (net)
+                  0.97    0.00   32.55 v output35/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.00    0.17    2.33   34.88 v output35/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         clockp[0] (net)
+                  0.17    0.00   34.88 v clockp[0] (out)
+                                 34.88   data arrival time
 
                   0.00  100.00  100.00   clock osc (rise edge)
                           0.00  100.00   clock network delay (ideal)
@@ -133,9 +133,9 @@ Fanout     Cap    Slew   Delay    Time   Description
                                  80.00   data required time
 -----------------------------------------------------------------------------
                                  80.00   data required time
-                                -45.72   data arrival time
+                                -34.88   data arrival time
 -----------------------------------------------------------------------------
-                                 34.28   slack (MET)
+                                 45.12   slack (MET)
 
 
 
@@ -146,7 +146,7 @@ detailed place report_check_types -max_slew -max_cap -max_fanout -violators
 ==========================================================================
 detailed place max_slew_check_slack
 --------------------------------------------------------------------------
-4.0348711013793945
+4.001828193664551
 
 ==========================================================================
 detailed place max_slew_check_limit
@@ -156,7 +156,7 @@ detailed place max_slew_check_limit
 ==========================================================================
 detailed place max_slew_check_slack_limit
 --------------------------------------------------------------------------
-0.7759
+0.7696
 
 ==========================================================================
 detailed place max_fanout_check_slack
@@ -171,7 +171,7 @@ detailed place max_fanout_check_limit
 ==========================================================================
 detailed place max_capacitance_check_slack
 --------------------------------------------------------------------------
-0.6242572665214539
+0.6256216764450073
 
 ==========================================================================
 detailed place max_capacitance_check_limit
@@ -181,7 +181,7 @@ detailed place max_capacitance_check_limit
 ==========================================================================
 detailed place max_capacitance_check_slack_limit
 --------------------------------------------------------------------------
-0.8784
+0.8803
 
 ==========================================================================
 detailed place max_slew_violation_count
@@ -236,17 +236,17 @@ detailed place critical path source clock latency min path
 ==========================================================================
 detailed place critical path delay
 --------------------------------------------------------------------------
-45.7241
+34.8847
 
 ==========================================================================
 detailed place critical path slack
 --------------------------------------------------------------------------
-34.2759
+45.1153
 
 ==========================================================================
 detailed place slack div critical path delay
 --------------------------------------------------------------------------
-74.962438
+129.326897
 
 ==========================================================================
 detailed place report_power
@@ -255,10 +255,10 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          1.48e-05   4.98e-06   5.25e-09   1.98e-05  99.9%
-Clock                  0.00e+00   0.00e+00   1.59e-08   1.59e-08   0.1%
+Combinational          1.51e-05   3.76e-06   5.25e-09   1.89e-05  99.9%
+Clock                  0.00e+00   0.00e+00   1.57e-08   1.57e-08   0.1%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  1.48e-05   4.98e-06   2.12e-08   1.98e-05 100.0%
-                          74.7%      25.1%       0.1%
+Total                  1.51e-05   3.76e-06   2.10e-08   1.89e-05 100.0%
+                          80.0%      19.9%       0.1%

@@ -6,8 +6,8 @@ Components of this program may be licensed under more restrictive licenses which
 read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
 read_db ./results/gf180/pll_ring_osc2x13/base/2_2_floorplan_macro.odb
 [WARNING TAP-0014] endcap_cpp option is deprecated.
-[INFO TAP-0004] Inserted 68 endcaps.
-[INFO TAP-0005] Inserted 18 tapcells.
-Elapsed time: 0:00.71[h:]min:sec. CPU time: user 0.69 sys 0.09 (111%). Peak memory: 123804KB.
+[INFO TAP-0004] Inserted 60 endcaps.
+[INFO TAP-0005] Inserted 16 tapcells.
+Elapsed time: 0:00.59[h:]min:sec. CPU time: user 0.59 sys 0.05 (108%). Peak memory: 129944KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_3_floorplan_tapcell              0            120 336f4a234fa659d1bdbf
+2_3_floorplan_tapcell              0            126 91bbc3e9b318b5e9e8fe

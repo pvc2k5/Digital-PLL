@@ -20,9 +20,9 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL            5908.6 u
-legalized HPWL           6029.3 u
-delta HPWL                    2 %
+original HPWL            1148.3 u
+legalized HPWL           1159.0 u
+delta HPWL                    1 %
 
 repair_timing -verbose -setup_margin 0 -repair_tns 100
 [INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
@@ -33,8 +33,8 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL            6029.3 u
-legalized HPWL           6029.3 u
+original HPWL            1159.0 u
+legalized HPWL           1159.0 u
 delta HPWL                    0 %
 
 Report metrics stage 4, cts final...
@@ -43,7 +43,7 @@ No registers in design
 ==========================================================================
 cts final report_design_area
 --------------------------------------------------------------------------
-Design area 8761 u^2 48% utilization.
-Elapsed time: 0:02.37[h:]min:sec. CPU time: user 2.39 sys 0.27 (112%). Peak memory: 160300KB.
+Design area 4120 u^2 29% utilization.
+Elapsed time: 0:02.65[h:]min:sec. CPU time: user 2.71 sys 0.19 (109%). Peak memory: 157700KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-4_1_cts                            2            156 c638f386f042c1cf2770
+4_1_cts                            2            154 082b86194aefe94679f5

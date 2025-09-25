@@ -35,174 +35,75 @@ No paths found.
 ==========================================================================
 cts final report_checks -unconstrained
 --------------------------------------------------------------------------
-Startpoint: dco (input port)
-Endpoint: clockp[1] (output port)
+Startpoint: reset (input port)
+Endpoint: clockp[0] (output port)
 Path Group: unconstrained
 Path Type: max
 
 Fanout     Cap    Slew   Delay    Time   Description
 -----------------------------------------------------------------------------
                           0.00    0.00 v input external delay
-     1    0.01    0.00    0.00    0.00 v dco (in)
-                                         dco (net)
-                  0.00    0.00    0.00 v input2/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-    26    0.33    1.35    3.14    3.14 v input2/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         net2 (net)
-                  1.35    0.00    3.14 v _30_/S (gf180mcu_fd_sc_mcu7t5v0__mux2_4)
-     2    0.02    0.17    0.71    3.85 ^ _30_/Z (gf180mcu_fd_sc_mcu7t5v0__mux2_4)
-                                         dstage[9].id.trim[0] (net)
-                  0.17    0.00    3.85 ^ dstage[9].id.delayen0/EN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.21    0.31    4.17 v dstage[9].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-                                         dstage[10].id.in (net)
-                  0.21    0.00    4.17 v dstage[10].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.42    4.59 ^ dstage[10].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[10].id.d1 (net)
-                  0.17    0.00    4.59 ^ dstage[10].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.06    0.05    4.64 v dstage[10].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[10].id.d2 (net)
-                  0.06    0.00    4.64 v dstage[10].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.30    0.48    5.13 ^ dstage[10].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-                                         dstage[10].id.out (net)
-                  0.30    0.00    5.13 ^ dstage[11].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.36    5.49 v dstage[11].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[11].id.d1 (net)
-                  0.15    0.00    5.49 v dstage[11].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.08    0.05    5.54 ^ dstage[11].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[11].id.d2 (net)
-                  0.08    0.00    5.54 ^ dstage[11].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.22    0.46    5.99 v dstage[11].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-                                         dstage[11].id.out (net)
-                  0.22    0.00    5.99 v iss.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     4    0.06    0.15    0.47    6.47 ^ iss.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     1    0.00    0.00    0.00    0.00 v reset (in)
+                                         reset (net)
+                  0.00    0.00    0.00 v input55/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.01    0.21    2.16    2.16 v input55/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         net55 (net)
+                  0.21    0.00    2.16 v _1_/A2 (gf180mcu_fd_sc_mcu7t5v0__nand2_2)
+     2    0.02    0.21    0.20    2.36 ^ _1_/ZN (gf180mcu_fd_sc_mcu7t5v0__nand2_2)
+                                         ireset (net)
+                  0.21    0.00    2.36 ^ iss.reseten0/EN (gf180mcu_fd_sc_mcu7t5v0__invz_1)
+     4    0.06    0.95    0.74    3.10 ^ iss.reseten0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_1)
                                          dstage[0].id.in (net)
-                  0.92    0.00    6.47 ^ dstage[0].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.38    6.85 v dstage[0].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[0].id.d1 (net)
-                  0.15    0.00    6.85 v dstage[0].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.07    0.05    6.89 ^ dstage[0].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[0].id.d2 (net)
-                  0.07    0.00    6.89 ^ dstage[0].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.23    0.46    7.35 v dstage[0].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.95    0.00    3.10 ^ dstage[0].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.11    0.32    3.42 v dstage[0].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[0].id.out (net)
-                  0.23    0.00    7.35 v dstage[1].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.43    7.77 ^ dstage[1].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[1].id.d1 (net)
-                  0.16    0.00    7.78 ^ dstage[1].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.06    0.05    7.82 v dstage[1].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[1].id.d2 (net)
-                  0.06    0.00    7.82 v dstage[1].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.32    0.50    8.32 ^ dstage[1].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.11    0.00    3.42 v dstage[1].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.12    0.42    3.84 ^ dstage[1].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[1].id.out (net)
-                  0.32    0.00    8.32 ^ dstage[2].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.36    8.68 v dstage[2].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[2].id.d1 (net)
-                  0.15    0.00    8.68 v dstage[2].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.07    0.05    8.73 ^ dstage[2].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[2].id.d2 (net)
-                  0.07    0.00    8.73 ^ dstage[2].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.05    0.24    0.47    9.20 v dstage[2].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.12    0.00    3.84 ^ dstage[2].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.11    0.34    4.18 v dstage[2].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[2].id.out (net)
-                  0.24    0.00    9.20 v dstage[3].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.43    9.63 ^ dstage[3].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[3].id.d1 (net)
-                  0.17    0.00    9.63 ^ dstage[3].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.06    0.05    9.68 v dstage[3].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[3].id.d2 (net)
-                  0.06    0.00    9.68 v dstage[3].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.33    0.51   10.19 ^ dstage[3].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.11    0.00    4.18 v dstage[3].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.12    0.41    4.59 ^ dstage[3].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[3].id.out (net)
-                  0.33    0.00   10.19 ^ dstage[4].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.36   10.55 v dstage[4].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[4].id.d1 (net)
-                  0.15    0.00   10.55 v dstage[4].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.08    0.05   10.60 ^ dstage[4].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[4].id.d2 (net)
-                  0.08    0.00   10.60 ^ dstage[4].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.23    0.46   11.06 v dstage[4].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.12    0.00    4.59 ^ dstage[4].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.11    0.34    4.93 v dstage[4].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[4].id.out (net)
-                  0.23    0.00   11.06 v dstage[5].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.11    0.43   11.49 ^ dstage[5].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[5].id.d1 (net)
-                  0.17    0.00   11.49 ^ dstage[5].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.06    0.05   11.54 v dstage[5].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[5].id.d2 (net)
-                  0.06    0.00   11.54 v dstage[5].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     4    0.05    0.39    0.54   12.08 ^ dstage[5].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.11    0.00    4.93 v dstage[5].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     4    0.05    0.13    0.43    5.36 ^ dstage[5].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[5].id.out (net)
-                  0.39    0.00   12.08 ^ dstage[6].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.37   12.45 v dstage[6].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[6].id.d1 (net)
-                  0.15    0.00   12.45 v dstage[6].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.07    0.05   12.50 ^ dstage[6].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[6].id.d2 (net)
-                  0.07    0.00   12.50 ^ dstage[6].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.23    0.46   12.96 v dstage[6].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.13    0.00    5.36 ^ dstage[6].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.11    0.34    5.70 v dstage[6].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[6].id.out (net)
-                  0.23    0.00   12.96 v dstage[7].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.43   13.39 ^ dstage[7].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[7].id.d1 (net)
-                  0.16    0.00   13.39 ^ dstage[7].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.06    0.05   13.44 v dstage[7].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[7].id.d2 (net)
-                  0.06    0.00   13.44 v dstage[7].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.31    0.49   13.92 ^ dstage[7].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.11    0.00    5.70 v dstage[7].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.12    0.41    6.11 ^ dstage[7].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[7].id.out (net)
-                  0.31    0.00   13.92 ^ dstage[8].id.delayenb1/I (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-     1    0.02    0.10    0.36   14.28 v dstage[8].id.delayenb1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_4)
-                                         dstage[8].id.d1 (net)
-                  0.15    0.00   14.28 v dstage[8].id.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.01    0.07    0.05   14.33 ^ dstage[8].id.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         dstage[8].id.d2 (net)
-                  0.07    0.00   14.33 ^ dstage[8].id.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     3    0.04    0.23    0.46   14.78 v dstage[8].id.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.12    0.00    6.11 ^ dstage[8].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.11    0.34    6.45 v dstage[8].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[8].id.out (net)
-                  0.23    0.00   14.78 v dstage[9].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     3    0.04    0.12    0.38   15.16 ^ dstage[9].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+                  0.11    0.00    6.45 v dstage[9].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.12    0.41    6.86 ^ dstage[9].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[10].id.in (net)
-                  0.30    0.00   15.16 ^ dstage[10].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     3    0.04    0.11    0.36   15.52 v dstage[10].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+                  0.12    0.00    6.86 ^ dstage[10].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.11    0.34    7.20 v dstage[10].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[10].id.out (net)
-                  0.22    0.00   15.52 v dstage[11].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     3    0.04    0.12    0.45   15.97 ^ dstage[11].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+                  0.11    0.00    7.20 v dstage[11].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     3    0.04    0.12    0.41    7.61 ^ dstage[11].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[11].id.out (net)
-                  0.31    0.00   15.97 ^ iss.delayen1/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     1    0.02    0.13    0.39   16.36 v iss.delayen1/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-                                         iss.d1 (net)
-                  0.13    0.00   16.36 v iss.delayint0/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-     1    0.01    0.13    0.12   16.48 ^ iss.delayint0/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_1)
-                                         iss.d2 (net)
-                  0.13    0.00   16.48 ^ iss.delayen0/I (gf180mcu_fd_sc_mcu7t5v0__invz_2)
-     4    0.06    0.28    0.52   17.00 v iss.delayen0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_2)
+                  0.12    0.00    7.61 ^ iss.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+     4    0.06    0.13    0.36    7.97 v iss.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
                                          dstage[0].id.in (net)
-                  0.48    0.00   17.00 v dstage[0].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     3    0.04    0.12    0.53   17.52 ^ dstage[0].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-                                         dstage[0].id.out (net)
-                  0.31    0.00   17.52 ^ dstage[1].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     3    0.04    0.11    0.36   17.89 v dstage[1].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-                                         dstage[1].id.out (net)
-                  0.23    0.00   17.89 v dstage[2].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     3    0.05    0.13    0.46   18.34 ^ dstage[2].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-                                         dstage[2].id.out (net)
-                  0.34    0.00   18.34 ^ dstage[3].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     3    0.04    0.11    0.37   18.71 v dstage[3].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-                                         dstage[3].id.out (net)
-                  0.24    0.00   18.71 v dstage[4].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     3    0.04    0.12    0.45   19.17 ^ dstage[4].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-                                         dstage[4].id.out (net)
-                  0.32    0.00   19.17 ^ dstage[5].id.delayenb0/I (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-     4    0.05    0.12    0.38   19.55 v dstage[5].id.delayenb0/ZN (gf180mcu_fd_sc_mcu7t5v0__invz_8)
-                                         dstage[5].id.out (net)
-                  0.27    0.00   19.55 v ibufp10/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-     1    0.03    0.27    0.24   19.79 ^ ibufp10/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
-                                         c[1] (net)
-                  0.27    0.00   19.79 ^ ibufp11/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_8)
-     1    0.00    0.07    0.05   19.84 v ibufp11/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_8)
-                                         net58 (net)
-                  0.07    0.00   19.84 v output58/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-     1    0.01    0.22    2.19   22.03 v output58/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
-                                         clockp[1] (net)
-                  0.22    0.00   22.03 v clockp[1] (out)
-                                 22.03   data arrival time
+                  0.50    0.00    7.97 v ibufp00/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
+     1    0.03    0.31    0.30    8.28 ^ ibufp00/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_2)
+                                         c[0] (net)
+                  0.31    0.00    8.28 ^ ibufp01/I (gf180mcu_fd_sc_mcu7t5v0__clkinv_8)
+     1    0.00    0.07    0.05    8.33 v ibufp01/ZN (gf180mcu_fd_sc_mcu7t5v0__clkinv_8)
+                                         net56 (net)
+                  0.07    0.00    8.33 v output56/I (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+     1    0.00    0.16    2.12   10.45 v output56/Z (gf180mcu_fd_sc_mcu7t5v0__dlyd_2)
+                                         clockp[0] (net)
+                  0.16    0.00   10.45 v clockp[0] (out)
+                                 10.45   data arrival time
 -----------------------------------------------------------------------------
 (Path is unconstrained)
 
@@ -215,7 +116,7 @@ cts final report_check_types -max_slew -max_cap -max_fanout -violators
 ==========================================================================
 cts final max_slew_check_slack
 --------------------------------------------------------------------------
-2.849806070327759
+4.2469305992126465
 
 ==========================================================================
 cts final max_slew_check_limit
@@ -225,7 +126,7 @@ cts final max_slew_check_limit
 ==========================================================================
 cts final max_slew_check_slack_limit
 --------------------------------------------------------------------------
-0.5480
+0.8167
 
 ==========================================================================
 cts final max_fanout_check_slack
@@ -240,7 +141,7 @@ cts final max_fanout_check_limit
 ==========================================================================
 cts final max_capacitance_check_slack
 --------------------------------------------------------------------------
-0.26496097445487976
+0.26319506764411926
 
 ==========================================================================
 cts final max_capacitance_check_limit
@@ -250,7 +151,7 @@ cts final max_capacitance_check_limit
 ==========================================================================
 cts final max_capacitance_check_slack_limit
 --------------------------------------------------------------------------
-0.8234
+0.8179
 
 ==========================================================================
 cts final max_slew_violation_count
@@ -299,10 +200,10 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          4.66e-03   1.15e-03   2.10e-08   5.81e-03 100.0%
-Clock                  0.00e+00   0.00e+00   2.23e-09   2.23e-09   0.0%
+Combinational          2.59e-03   1.18e-03   9.92e-09   3.77e-03 100.0%
+Clock                  0.00e+00   0.00e+00   1.97e-09   1.97e-09   0.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  4.66e-03   1.15e-03   2.32e-08   5.81e-03 100.0%
-                          80.2%      19.8%       0.0%
+Total                  2.59e-03   1.18e-03   1.19e-08   3.77e-03 100.0%
+                          68.7%      31.3%       0.0%

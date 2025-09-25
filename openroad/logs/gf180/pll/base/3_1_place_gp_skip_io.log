@@ -12,21 +12,21 @@ global_placement -skip_io -density "0.55 " -pad_left 0 -pad_right 0
 [INFO GPL-0002] DBU: 2000
 [INFO GPL-0003] SiteSize: (  0.560  3.920 ) um
 [INFO GPL-0004] CoreBBox: ( 10.080 11.760 ) ( 490.000 490.000 ) um
-[INFO GPL-0006] Number of instances:               366
+[INFO GPL-0006] Number of instances:               360
 [INFO GPL-0007] Movable instances:                   0
-[INFO GPL-0008] Fixed instances:                   182
-[INFO GPL-0009] Dummy instances:                   184
+[INFO GPL-0008] Fixed instances:                   184
+[INFO GPL-0009] Dummy instances:                   176
 [INFO GPL-0010] Number of nets:                     63
 [INFO GPL-0011] Number of pins:                     93
 [INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 500.000 500.000 ) um
 [INFO GPL-0013] Core BBox: ( 10.080 11.760 ) ( 490.000 490.000 ) um
 [INFO GPL-0016] Core area:                  229516.941 um^2
-[INFO GPL-0017] Fixed instances area:        75824.403 um^2
+[INFO GPL-0017] Fixed instances area:        70224.448 um^2
 [INFO GPL-0018] Movable instances area:          0.000 um^2
 [INFO GPL-0019] Utilization:                     0.000 %
 [INFO GPL-0020] Standard cells area:             0.000 um^2
 [INFO GPL-0021] Large instances area:            0.000 um^2
 [WARNING GPL-0136] No placeable instances - skipping placement.
-Elapsed time: 0:00.67[h:]min:sec. CPU time: user 0.67 sys 0.07 (111%). Peak memory: 125480KB.
+Elapsed time: 0:00.60[h:]min:sec. CPU time: user 0.58 sys 0.06 (107%). Peak memory: 125048KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-3_1_place_gp_skip_io               0            122 287962083c282771196f
+3_1_place_gp_skip_io               0            122 e3e3b34f593151142619

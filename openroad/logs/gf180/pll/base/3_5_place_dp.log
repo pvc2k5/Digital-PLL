@@ -9,17 +9,17 @@ read_liberty ./results/gf180/pll_ring_osc2x13/base/ring_osc2x13_typ.lib
 read_db ./results/gf180/pll/base/3_4_place_resized.odb
 Placement Analysis
 ---------------------------------
-total displacement        191.0 u
-average displacement        0.3 u
-max displacement           78.1 u
-original HPWL           25426.3 u
-legalized HPWL          25593.1 u
-delta HPWL                    1 %
+total displacement        117.3 u
+average displacement        0.2 u
+max displacement           24.7 u
+original HPWL           22528.5 u
+legalized HPWL          22524.4 u
+delta HPWL                    0 %
 
 Detailed placement improvement.
 [INFO DPL-0401] Setting random seed to 1.
 [INFO DPL-0402] Setting maximum displacement 5 1 to 39200 7840 units.
-[INFO DPL-0320] Collected 748 fixed cells.
+[INFO DPL-0320] Collected 735 fixed cells.
 [INFO DPL-0318] Collected 36 single height cells.
 [INFO DPL-0321] Collected 0 wide cells.
 [INFO DPL-0322] Image (20160, 23520) - (980000, 980000)
@@ -31,31 +31,31 @@ Detailed placement improvement.
 [INFO DPL-0312] Found 0 edge spacing violations and 0 padding violations.
 [INFO DPL-0303] Running algorithm for independent set matching.
 [INFO DPL-0300] Set matching objective is wirelength.
-[INFO DPL-0301] Pass   1 of matching; objective is 5.634998e+07.
-[INFO DPL-0302] End of matching; objective is 5.634998e+07, improvement is 0.00 percent.
+[INFO DPL-0301] Pass   1 of matching; objective is 5.019456e+07.
+[INFO DPL-0302] End of matching; objective is 5.019456e+07, improvement is 0.00 percent.
 [INFO DPL-0303] Running algorithm for global swaps.
-[INFO DPL-0306] Pass   1 of global swaps; hpwl is 5.618190e+07.
-[INFO DPL-0307] End of global swaps; objective is 5.618190e+07, improvement is 0.30 percent.
+[INFO DPL-0306] Pass   1 of global swaps; hpwl is 4.998016e+07.
+[INFO DPL-0307] End of global swaps; objective is 4.998016e+07, improvement is 0.43 percent.
 [INFO DPL-0303] Running algorithm for vertical swaps.
-[INFO DPL-0308] Pass   1 of vertical swaps; hpwl is 5.618190e+07.
-[INFO DPL-0309] End of vertical swaps; objective is 5.618190e+07, improvement is 0.00 percent.
+[INFO DPL-0308] Pass   1 of vertical swaps; hpwl is 4.998016e+07.
+[INFO DPL-0309] End of vertical swaps; objective is 4.998016e+07, improvement is 0.00 percent.
 [INFO DPL-0303] Running algorithm for reordering.
-[INFO DPL-0304] Pass   1 of reordering; objective is 5.618190e+07.
-[INFO DPL-0305] End of reordering; objective is 5.618190e+07, improvement is 0.00 percent.
+[INFO DPL-0304] Pass   1 of reordering; objective is 4.998016e+07.
+[INFO DPL-0305] End of reordering; objective is 4.998016e+07, improvement is 0.00 percent.
 [INFO DPL-0303] Running algorithm for random improvement.
 [INFO DPL-0324] Random improver is using displacement generator.
 [INFO DPL-0325] Random improver is using hpwl objective.
 [INFO DPL-0326] Random improver cost string is (a).
 [INFO DPL-0332] End of pass, Generator displacement called 720 times.
-[INFO DPL-0335] Generator displacement, Cumulative attempts 720, swaps 34, moves   218 since last reset.
-[INFO DPL-0333] End of pass, Objective hpwl, Initial cost 5.618190e+07, Scratch cost 5.593268e+07, Incremental cost 5.593268e+07, Mismatch? N
-[INFO DPL-0338] End of pass, Total cost is 5.593268e+07.
-[INFO DPL-0327] Pass   1 of random improver; improvement in cost is 0.44 percent.
-[INFO DPL-0328] End of random improver; improvement is 0.443595 percent.
+[INFO DPL-0335] Generator displacement, Cumulative attempts 720, swaps 47, moves   206 since last reset.
+[INFO DPL-0333] End of pass, Objective hpwl, Initial cost 4.998016e+07, Scratch cost 4.950052e+07, Incremental cost 4.950052e+07, Mismatch? N
+[INFO DPL-0338] End of pass, Total cost is 4.950052e+07.
+[INFO DPL-0327] Pass   1 of random improver; improvement in cost is 0.96 percent.
+[INFO DPL-0328] End of random improver; improvement is 0.959641 percent.
 [INFO DPL-0380] Cell flipping.
 [INFO DPL-0382] Changed 0 cell orientations for row compatibility.
-[INFO DPL-0383] Performed 25 cell flips.
-[INFO DPL-0384] End of flipping; objective is 5.570450e+07, improvement is 0.41 percent.
+[INFO DPL-0383] Performed 29 cell flips.
+[INFO DPL-0384] End of flipping; objective is 4.925926e+07, improvement is 0.49 percent.
 [INFO DPL-0313] Found 0 cells in wrong regions.
 [INFO DPL-0315] Found 0 row alignment problems.
 [INFO DPL-0314] Found 0 site alignment problems.
@@ -63,13 +63,13 @@ Detailed placement improvement.
 [INFO DPL-0312] Found 0 edge spacing violations and 0 padding violations.
 Detailed Improvement Results
 ------------------------------------------
-Original HPWL            25593.1 u (   12411.7,    13181.4)
-Final HPWL               25342.8 u (   12205.3,    13137.5)
-Delta HPWL                  -1.0 % (      -1.7,       -0.3)
+Original HPWL            22524.4 u (   10854.9,    11669.5)
+Final HPWL               22142.2 u (   10531.1,    11611.1)
+Delta HPWL                  -1.7 % (      -3.0,       -0.5)
 
-[INFO DPL-0020] Mirrored 5 instances
-[INFO DPL-0021] HPWL before           25342.8 u
-[INFO DPL-0022] HPWL after            25342.8 u
+[INFO DPL-0020] Mirrored 6 instances
+[INFO DPL-0021] HPWL before           22142.2 u
+[INFO DPL-0022] HPWL after            22142.2 u
 [INFO DPL-0023] HPWL delta                0.0 %
 [INFO FLW-0012] Placement violations .
 Report metrics stage 3, detailed place...
@@ -77,7 +77,7 @@ Report metrics stage 3, detailed place...
 ==========================================================================
 detailed place report_design_area
 --------------------------------------------------------------------------
-Design area 49697 u^2 22% utilization.
-Elapsed time: 0:00.81[h:]min:sec. CPU time: user 0.66 sys 0.30 (118%). Peak memory: 137116KB.
+Design area 45298 u^2 20% utilization.
+Elapsed time: 0:00.93[h:]min:sec. CPU time: user 0.76 sys 0.33 (118%). Peak memory: 136716KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-3_5_place_dp                       0            133 761130b5f9626e284fcd
+3_5_place_dp                       0            133 a621f8fb5cf18cecf8b8

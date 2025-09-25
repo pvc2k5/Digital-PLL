@@ -20,14 +20,13 @@ clock_tree_synthesis -sink_clustering_enable -balance_levels -repair_clock_nets
 [WARNING CTS-0083] No clock nets have been found.
 [INFO CTS-0008] TritonCTS found 0 clock nets.
 [WARNING CTS-0082] No valid clock nets in the design.
-Took 7 seconds: clock_tree_synthesis -sink_clustering_enable -balance_levels -repair_clock_nets
 Placement Analysis
 ---------------------------------
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL           25342.8 u
-legalized HPWL          25417.6 u
+original HPWL           22142.2 u
+legalized HPWL          22220.5 u
 delta HPWL                    0 %
 
 repair_timing -verbose -setup_margin 0 -repair_tns 100
@@ -39,8 +38,8 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL           25417.6 u
-legalized HPWL          25417.6 u
+original HPWL           22220.5 u
+legalized HPWL          22220.5 u
 delta HPWL                    0 %
 
 Report metrics stage 4, cts final...
@@ -48,7 +47,7 @@ Report metrics stage 4, cts final...
 ==========================================================================
 cts final report_design_area
 --------------------------------------------------------------------------
-Design area 49697 u^2 22% utilization.
-Elapsed time: 0:07.67[h:]min:sec. CPU time: user 4.31 sys 0.30 (60%). Peak memory: 165640KB.
+Design area 45298 u^2 20% utilization.
+Elapsed time: 0:04.70[h:]min:sec. CPU time: user 4.85 sys 0.39 (111%). Peak memory: 165512KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-4_1_cts                            7            161 ee220e10464fefe04120
+4_1_cts                            4            161 d1ae3fe3d0ac3b120aad

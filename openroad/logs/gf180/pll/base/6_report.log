@@ -12,12 +12,12 @@ Deleted 0 routing obstructions
 [INFO RCX-0029] Defined extraction corner X
 [INFO RCX-0435] Reading extraction model file /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/openROAD/rcx/gf180mcu_1p5m_1tm_9k_sp_smim_OPTB_bst.rules ...
 [INFO RCX-0436] RC segment generation digital_pll (max_merge_res 50.0) ...
-[INFO RCX-0040] Final 243 rc segments
+[INFO RCX-0040] Final 211 rc segments
 [INFO RCX-0439] Coupling Cap extraction digital_pll ...
 [INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
-[INFO RCX-0442] 55% of 874 wires extracted
-[INFO RCX-0442] 100% of 874 wires extracted
-[INFO RCX-0045] Extract 99 nets, 342 rsegs, 342 caps, 707 ccs
+[INFO RCX-0442] 56% of 779 wires extracted
+[INFO RCX-0442] 100% of 779 wires extracted
+[INFO RCX-0045] Extract 99 nets, 310 rsegs, 310 caps, 597 ccs
 [INFO RCX-0443] 99 nets finished
 [INFO PSM-0040] All shapes on net VDD are connected.
 [INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
@@ -27,8 +27,8 @@ Corner           : default
 Supply voltage   : 3.60e+00 V
 Worstcase voltage: 3.60e+00 V
 Average voltage  : 3.60e+00 V
-Average IR drop  : 1.00e-07 V
-Worstcase IR drop: 1.01e-06 V
+Average IR drop  : 8.11e-08 V
+Worstcase IR drop: 7.91e-07 V
 Percentage drop  : 0.00 %
 ######################################
 [INFO PSM-0040] All shapes on net VSS are connected.
@@ -37,26 +37,26 @@ Percentage drop  : 0.00 %
 Net              : VSS
 Corner           : default
 Supply voltage   : 0.00e+00 V
-Worstcase voltage: 1.07e-06 V
-Average voltage  : 8.19e-08 V
-Average IR drop  : 8.19e-08 V
-Worstcase IR drop: 1.07e-06 V
+Worstcase voltage: 1.14e-06 V
+Average voltage  : 9.01e-08 V
+Average IR drop  : 9.01e-08 V
+Worstcase IR drop: 1.14e-06 V
 Percentage drop  : 0.00 %
 ######################################
 Cell type report:                       Count       Area
-  Macro                                     2   46851.64
-  Endcap cell                             434    1905.43
-  Fill cell                              1971  156383.85
-  Tap cell                                180     790.27
-  Antenna cell                              8      35.12
+  Macro                                     2   42453.37
+  Endcap cell                             424    1861.53
+  Fill cell                              1932  162330.65
+  Tap cell                                182     799.05
+  Antenna cell                              4      17.56
   Timing Repair Buffer                     36    2844.98
-  Total                                  2631  208811.30
+  Total                                  2580  210307.14
 Report metrics stage 6, finish...
 
 ==========================================================================
 finish report_design_area
 --------------------------------------------------------------------------
-Design area 49732 u^2 22% utilization.
-Elapsed time: 0:01.88[h:]min:sec. CPU time: user 1.84 sys 0.48 (123%). Peak memory: 200584KB.
+Design area 45316 u^2 20% utilization.
+Elapsed time: 0:05.00[h:]min:sec. CPU time: user 1.97 sys 0.51 (49%). Peak memory: 200744KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-6_report                           1            195                  N/A
+6_report                           5            196                  N/A

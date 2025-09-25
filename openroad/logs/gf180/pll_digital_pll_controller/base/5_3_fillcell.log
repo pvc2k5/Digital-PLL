@@ -7,6 +7,6 @@ read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/
 read_db ./results/gf180/pll_digital_pll_controller/base/5_2_route.odb
 filler_placement "gf180mcu_fd_sc_mcu7t5v0__fill_64 gf180mcu_fd_sc_mcu7t5v0__fill_32 gf180mcu_fd_sc_mcu7t5v0__fill_16 gf180mcu_fd_sc_mcu7t5v0__fill_8 gf180mcu_fd_sc_mcu7t5v0__fill_4 gf180mcu_fd_sc_mcu7t5v0__fill_2 gf180mcu_fd_sc_mcu7t5v0__fill_1"
 [INFO DPL-0001] Placed 520 filler instances.
-Elapsed time: 0:00.59[h:]min:sec. CPU time: user 0.61 sys 0.04 (110%). Peak memory: 129420KB.
+Elapsed time: 0:00.63[h:]min:sec. CPU time: user 0.62 sys 0.06 (108%). Peak memory: 133220KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-5_3_fillcell                       0            126 59ea9fa42d801202835b
+5_3_fillcell                       0            130 59ea9fa42d801202835b

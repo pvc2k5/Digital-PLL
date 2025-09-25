@@ -8,9 +8,9 @@ read_liberty ./results/gf180/pll_digital_pll_controller/base/digital_pll_control
 read_liberty ./results/gf180/pll_ring_osc2x13/base/ring_osc2x13_typ.lib
 read_db ./results/gf180/pll/base/2_2_floorplan_macro.odb
 [WARNING TAP-0014] endcap_cpp option is deprecated.
-[INFO ODB-0303] The initial 122 rows (104554 sites) were cut with 2 shapes for a total of 217 rows (73779 sites).
+[INFO ODB-0303] The initial 122 rows (104554 sites) were cut with 2 shapes for a total of 212 rows (76464 sites).
 [INFO TAP-0004] Inserted 244 endcaps.
-[INFO TAP-0005] Inserted 180 tapcells.
-Elapsed time: 0:00.61[h:]min:sec. CPU time: user 0.63 sys 0.04 (110%). Peak memory: 124972KB.
+[INFO TAP-0005] Inserted 182 tapcells.
+Elapsed time: 0:00.70[h:]min:sec. CPU time: user 0.72 sys 0.04 (107%). Peak memory: 124396KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_3_floorplan_tapcell              0            122 a7fc26775706281500e9
+2_3_floorplan_tapcell              0            121 d389d1a7a84daeb03bba

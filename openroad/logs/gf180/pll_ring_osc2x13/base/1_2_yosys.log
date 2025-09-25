@@ -106,6 +106,8 @@ Warning: multiple conflicting drivers for ring_osc2x13.\dstage[0].id.d1:
 Warning: multiple conflicting drivers for ring_osc2x13.\dstage[0].id.out:
     port ZN[0] of cell dstage[0].id.delayen0 (gf180mcu_fd_sc_mcu7t5v0__invz_2)
     port ZN[0] of cell dstage[0].id.delayenb0 (gf180mcu_fd_sc_mcu7t5v0__invz_8)
+Warning: Wire ring_osc2x13.\ext_trim is used but has no driver.
+Warning: Wire ring_osc2x13.\trim is used but has no driver.
 3.7. Executing OPT pass (performing simple optimizations).
 3.7.1. Executing OPT_EXPR pass (perform const folding).
 3.7.2. Executing OPT_MERGE pass (detect identical cells).
@@ -265,8 +267,8 @@ abc -script /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/s
 21.1. Executing BMUXMAP pass.
 21.2. Executing DEMUXMAP pass.
 exec cp /home/pvc/openroad/Digital-PLL/openroad/digital_pll/ring_osc2x13/constraint.sdc ./results/gf180/pll_ring_osc2x13/base/1_synth.sdc
-Warnings: 26 unique messages, 78 total
-End of script. Logfile hash: 96303f155c, CPU: user 0.43s system 0.01s, MEM: 70.45 MB peak
+Warnings: 28 unique messages, 80 total
+End of script. Logfile hash: 4c1faf47de, CPU: user 0.29s system 0.02s, MEM: 70.34 MB peak
 Yosys 0.57+72 (git sha1 fa02d71f6, x86_64-conda-linux-gnu-c++ 11.2.0 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/home/runner/work/conda-opensource-eda/conda-opensource-eda/workdir/conda-env/conda-bld/yosys_1757723646908/work=/usr/local/src/conda/yosys-0.57_73_gfa02d71f6 -fdebug-prefix-map=/home/pvc/eda-env/envs/py312=/usr/local/src/conda-prefix -fPIC -O3)
-Time spent: 35% 2x abc (0 sec), 15% 2x stat (0 sec), ...
-Elapsed time: 0:00.69[h:]min:sec. CPU time: user 0.69 sys 0.05 (108%). Peak memory: 73812KB.
+Time spent: 36% 2x abc (0 sec), 17% 2x stat (0 sec), ...
+Elapsed time: 0:00.52[h:]min:sec. CPU time: user 0.51 sys 0.04 (106%). Peak memory: 73712KB.

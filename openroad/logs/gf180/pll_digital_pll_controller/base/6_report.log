@@ -57,6 +57,6 @@ Report metrics stage 6, finish...
 finish report_design_area
 --------------------------------------------------------------------------
 Design area 9176 u^2 37% utilization.
-Elapsed time: 0:02.30[h:]min:sec. CPU time: user 1.88 sys 1.07 (128%). Peak memory: 198620KB.
+Elapsed time: 0:02.45[h:]min:sec. CPU time: user 1.91 sys 1.13 (124%). Peak memory: 197724KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
 6_report                           2            193                  N/A

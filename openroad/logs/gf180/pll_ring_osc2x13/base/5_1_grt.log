@@ -24,13 +24,13 @@ Number of viarulegen: 18
 [INFO DRT-0150] Reading design.
 
 Design:                   ring_osc2x13
-Die area:                 ( 0 0 ) ( 285280 285280 )
+Die area:                 ( 0 0 ) ( 252570 252570 )
 Number of track patterns: 10
 Number of DEF vias:       0
-Number of components:     267
+Number of components:     230
 Number of terminals:      57
 Number of snets:          2
-Number of nets:           209
+Number of nets:           182
 
 [INFO DRT-0167] List of default vias:
   Layer Via2
@@ -41,7 +41,7 @@ Number of nets:           209
     default via: Via4_1_VH
 [INFO DRT-0162] Library cell analysis.
 [INFO DRT-0163] Instance analysis.
-[INFO DRT-0164] Number of unique instances = 28.
+[INFO DRT-0164] Number of unique instances = 26.
 [INFO DRT-0168] Init region query.
 [INFO DRT-0024]   Complete Poly2.
 [INFO DRT-0024]   Complete CON.
@@ -56,33 +56,33 @@ Number of nets:           209
 [INFO DRT-0024]   Complete Metal5.
 [INFO DRT-0033] Poly2 shape region query size = 0.
 [INFO DRT-0033] CON shape region query size = 0.
-[INFO DRT-0033] Metal1 shape region query size = 6755.
-[INFO DRT-0033] Via1 shape region query size = 420.
-[INFO DRT-0033] Metal2 shape region query size = 210.
-[INFO DRT-0033] Via2 shape region query size = 840.
-[INFO DRT-0033] Metal3 shape region query size = 210.
-[INFO DRT-0033] Via3 shape region query size = 840.
-[INFO DRT-0033] Metal4 shape region query size = 168.
+[INFO DRT-0033] Metal1 shape region query size = 4309.
+[INFO DRT-0033] Via1 shape region query size = 372.
+[INFO DRT-0033] Metal2 shape region query size = 186.
+[INFO DRT-0033] Via2 shape region query size = 744.
+[INFO DRT-0033] Metal3 shape region query size = 186.
+[INFO DRT-0033] Via3 shape region query size = 744.
+[INFO DRT-0033] Metal4 shape region query size = 156.
 [INFO DRT-0033] Via4 shape region query size = 0.
 [INFO DRT-0033] Metal5 shape region query size = 0.
 [INFO DRT-0165] Start pin access.
-[INFO DRT-0078]   Complete 108 pins.
-[INFO DRT-0081]   Complete 24 unique inst patterns.
-[INFO DRT-0084]   Complete 126 groups.
-#scanned instances     = 267
-#unique  instances     = 28
-#stdCellGenAp          = 501
+[INFO DRT-0078]   Complete 90 pins.
+[INFO DRT-0081]   Complete 22 unique inst patterns.
+[INFO DRT-0084]   Complete 87 groups.
+#scanned instances     = 230
+#unique  instances     = 26
+#stdCellGenAp          = 385
 #stdCellValidPlanarAp  = 0
-#stdCellValidViaAp     = 390
+#stdCellValidViaAp     = 304
 #stdCellPinNoAp        = 0
-#stdCellPinCnt         = 467
+#stdCellPinCnt         = 257
 #instTermValidViaApCnt = 0
 #macroGenAp            = 0
 #macroValidPlanarAp    = 0
 #macroValidViaAp       = 0
 #macroNoAp             = 0
 [INFO DRT-0166] Complete pin access.
-[INFO DRT-0267] cpu time = 00:00:03, elapsed time = 00:00:00, memory = 123.42 (MB), peak = 123.42 (MB)
+[INFO DRT-0267] cpu time = 00:00:02, elapsed time = 00:00:00, memory = 123.43 (MB), peak = 123.43 (MB)
 global_route -congestion_report_file ./reports/gf180/pll_ring_osc2x13/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
 [INFO GRT-0020] Min routing layer: Metal2
 [INFO GRT-0021] Max routing layer: Metal4
@@ -96,64 +96,61 @@ global_route -congestion_report_file ./reports/gf180/pll_ring_osc2x13/base/conge
 [INFO GRT-0004] Blockages: 0
 [INFO GRT-0019] Found 0 clock nets.
 [INFO GRT-0001] Minimum degree: 2
-[INFO GRT-0002] Maximum degree: 27
+[INFO GRT-0002] Maximum degree: 7
 
 [INFO GRT-0053] Routing resources analysis:
           Routing      Original      Derated      Resource
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 Metal1     Horizontal          0             0          0.00%
-Metal2     Vertical         4064          2265          44.27%
-Metal3     Horizontal       4064          2694          33.71%
-Metal4     Vertical         4064          2250          44.64%
+Metal2     Vertical         3375          1820          46.07%
+Metal3     Horizontal       3375          2217          34.31%
+Metal4     Vertical         3375          1806          46.49%
 ---------------------------------------------------------------
 
-[INFO GRT-0197] Via related to pin nodes: 819
-[INFO GRT-0198] Via related Steiner nodes: 6
+[INFO GRT-0197] Via related to pin nodes: 341
+[INFO GRT-0198] Via related Steiner nodes: 3
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 1044
-[INFO GRT-0112] Final usage 3D: 3806
+[INFO GRT-0111] Final number of vias: 400
+[INFO GRT-0112] Final usage 3D: 1345
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 Metal1               0             0            0.00%             0 /  0 /  0
-Metal2            2265           305           13.47%             0 /  0 /  0
-Metal3            2694           189            7.02%             0 /  0 /  0
-Metal4            2250           180            8.00%             0 /  0 /  0
+Metal2            1820            81            4.45%             0 /  0 /  0
+Metal3            2217            61            2.75%             0 /  0 /  0
+Metal4            1806             3            0.17%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total             7209           674            9.35%             0 /  0 /  0
+Total             5843           145            2.48%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 8727 um
-[INFO GRT-0014] Routed nets: 209
+[INFO GRT-0018] Total wirelength: 2301 um
+[INFO GRT-0014] Routed nets: 129
 Perform buffer insertion and gate resizing...
 repair_design -verbose
 Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
 ---------------------------------------------------------------------
-        0 |     +0.0% |       0 |       0 |             0 |       236
-       10 |     +0.0% |       0 |       0 |             0 |       226
-       20 |     +0.0% |       0 |       0 |             0 |       216
-       30 |     +0.0% |       0 |       0 |             0 |       206
-       40 |     +0.0% |       0 |       0 |             0 |       196
-       50 |     +0.0% |       0 |       0 |             0 |       186
-       60 |     +0.0% |       0 |       0 |             0 |       176
-       70 |     +0.0% |       0 |       0 |             0 |       166
-       80 |     +0.0% |       0 |       0 |             0 |       156
-       90 |     +0.0% |       0 |       0 |             0 |       146
-      100 |     +0.0% |       0 |       0 |             0 |       136
-      110 |     +0.0% |       0 |       0 |             0 |       126
-      120 |     +0.0% |       0 |       0 |             0 |       116
-      130 |     +0.0% |       0 |       0 |             0 |       106
-      140 |     +0.0% |       0 |       0 |             0 |        96
-      150 |     +0.0% |       0 |       0 |             0 |        86
-      160 |     +0.0% |       0 |       0 |             0 |        76
-      170 |     +0.0% |       0 |       0 |             0 |        66
-      180 |     +0.0% |       0 |       0 |             0 |        56
-      190 |     +0.0% |       0 |       0 |             0 |        46
-      200 |     +0.0% |       0 |       0 |             0 |        36
-      210 |     +0.0% |       0 |       0 |             0 |        26
-      220 |     +0.0% |       0 |       0 |             0 |        16
-      230 |     +0.0% |       0 |       0 |             0 |         6
+        0 |     +0.0% |       0 |       0 |             0 |       209
+       10 |     +0.0% |       0 |       0 |             0 |       199
+       20 |     +0.0% |       0 |       0 |             0 |       189
+       30 |     +0.0% |       0 |       0 |             0 |       179
+       40 |     +0.0% |       0 |       0 |             0 |       169
+       50 |     +0.0% |       0 |       0 |             0 |       159
+       60 |     +0.0% |       0 |       0 |             0 |       149
+       70 |     +0.0% |       0 |       0 |             0 |       139
+       80 |     +0.0% |       0 |       0 |             0 |       129
+       90 |     +0.0% |       0 |       0 |             0 |       119
+      100 |     +0.0% |       0 |       0 |             0 |       109
+      110 |     +0.0% |       0 |       0 |             0 |        99
+      120 |     +0.0% |       0 |       0 |             0 |        89
+      130 |     +0.0% |       0 |       0 |             0 |        79
+      140 |     +0.0% |       0 |       0 |             0 |        69
+      150 |     +0.0% |       0 |       0 |             0 |        59
+      160 |     +0.0% |       0 |       0 |             0 |        49
+      170 |     +0.0% |       0 |       0 |             0 |        39
+      180 |     +0.0% |       0 |       0 |             0 |        29
+      190 |     +0.0% |       0 |       0 |             0 |        19
+      200 |     +0.0% |       0 |       0 |             0 |         9
     final |     +0.0% |       0 |       0 |             0 |         0
 ---------------------------------------------------------------------
 global_route -start_incremental
@@ -163,8 +160,8 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL            6029.3 u
-legalized HPWL           6029.3 u
+original HPWL            1159.0 u
+legalized HPWL           1159.0 u
 delta HPWL                    0 %
 
 global_route -end_incremental -congestion_report_file ./reports/gf180/pll_ring_osc2x13/base/congestion_post_repair_design.rpt
@@ -180,8 +177,8 @@ Placement Analysis
 total displacement          0.0 u
 average displacement        0.0 u
 max displacement            0.0 u
-original HPWL            6029.3 u
-legalized HPWL           6029.3 u
+original HPWL            1159.0 u
+legalized HPWL           1159.0 u
 delta HPWL                    0 %
 
 global_route -end_incremental -congestion_report_file ./reports/gf180/pll_ring_osc2x13/base/congestion_post_repair_timing.rpt
@@ -198,9 +195,9 @@ No registers in design
 ==========================================================================
 global route report_design_area
 --------------------------------------------------------------------------
-Design area 8761 u^2 48% utilization.
+Design area 4120 u^2 29% utilization.
 [WARNING FLW-0006] No clocks found.
-[INFO FLW-0011] Path endpoint path count 14
-Elapsed time: 0:01.42[h:]min:sec. CPU time: user 4.59 sys 0.32 (345%). Peak memory: 197568KB.
+[INFO FLW-0011] Path endpoint path count 28
+Elapsed time: 0:01.23[h:]min:sec. CPU time: user 3.76 sys 0.12 (316%). Peak memory: 198352KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-5_1_grt                            1            192 842aaa493be50832ef9f
+5_1_grt                            1            193 18bc05007b9ea8c4eb41

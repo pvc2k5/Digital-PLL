@@ -6,6 +6,6 @@ Components of this program may be licensed under more restrictive licenses which
 read_liberty /home/pvc/openroad/Digital-PLL/openroad/OpenROAD-flow-scripts/flow/platforms/gf180/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib.gz
 read_db ./results/gf180/pll_ring_osc2x13/base/2_3_floorplan_tapcell.odb
 [INFO PDN-0001] Inserting grid: block
-Elapsed time: 0:00.63[h:]min:sec. CPU time: user 0.64 sys 0.05 (110%). Peak memory: 125244KB.
+Elapsed time: 0:00.58[h:]min:sec. CPU time: user 0.57 sys 0.05 (108%). Peak memory: 124960KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-2_4_floorplan_pdn                  0            122 5fb4f568e5297c0a68bd
+2_4_floorplan_pdn                  0            122 0a457932037eaae77e03

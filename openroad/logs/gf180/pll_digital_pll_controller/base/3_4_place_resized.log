@@ -45,6 +45,6 @@ resizer report_design_area
 Design area 9000 u^2 36% utilization.
 Instance count before 315, after 315
 Pin count before 688, after 688
-Elapsed time: 0:01.31[h:]min:sec. CPU time: user 0.83 sys 0.85 (128%). Peak memory: 144416KB.
+Elapsed time: 0:01.72[h:]min:sec. CPU time: user 1.12 sys 0.91 (118%). Peak memory: 144160KB.
 Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
-3_4_place_resized                  1            141 65fa26d922046335edcf
+3_4_place_resized                  1            140 65fa26d922046335edcf
