@@ -1,3 +1,9 @@
 [submodule "openroad/OpenROAD-flow-script"]
 	path = openroad/OpenROAD-flow-script
 	url = https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
+[submodule "openroad/blocks_method/OpenROAD-flow-scripts"]
+	path = openroad/blocks_method/OpenROAD-flow-scripts
+	url = https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
+[submodule "openroad/hierarchy_method/OpenROAD-flow-scripts"]
+	path = openroad/hierarchy_method/OpenROAD-flow-scripts
+	url = https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts
