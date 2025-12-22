@@ -27,7 +27,7 @@ module tb_digital_pll();
     real lock_start_time, lock_end_time, lock_time;
     reg measurement_done;
 
-    pll dut (
+    digital_pll dut (
         .resetb(resetb),
         .enable(enable),
         .osc(osc),

@@ -13,7 +13,7 @@ module tb_top_DCO;
     localparam OSC_PERIOD = 20; // Chu kỳ 20ns
     real t_start, t_end, T , freq;
 
-    pll dut (
+    digital_pll dut (
         .resetb(resetb),
         .enable(enable),
         .osc(osc),

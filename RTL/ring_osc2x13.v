@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // SPDX-License-Identifier: Apache-2.0
-
+`timescale 1ns/1ps
 `default_nettype none
 // Tunable ring oscillator---synthesizable (physical) version.
 //

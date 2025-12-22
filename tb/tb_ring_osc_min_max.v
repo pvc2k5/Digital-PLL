@@ -12,7 +12,7 @@ module tb_ring_osc;
     wire [1:0] clockp;
 
 
-    ring_osc dut (
+    ring_osc2x13 dut (
         .reset(reset),
         .trim(trim),
         .clockp(clockp)

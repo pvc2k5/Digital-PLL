@@ -8,7 +8,7 @@ module tb_pll_controller_prep;
     reg [4:0] div;
     wire [25:0] trim;
 
-    pll_controller uut (
+    digital_pll_controller uut (
         .reset(reset), .clock(clock), .osc(osc),
         .div(div), .trim(trim)
     );
