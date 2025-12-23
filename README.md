@@ -105,14 +105,14 @@ Use iverilog and Make to verify functionality:
 - Run all testbenches:
 
 ```bash
-cd $PROJECT_ROOT/sim
+cd Digital-PLL/sim
 make
 ```
 
 - Run a specific testbench:
 
 ```bash
-cd $PROJECT_ROOT/sim
+cd Digital-PLL/sim
 make <testbench_name>
 ```
 
@@ -160,3 +160,4 @@ klayout 6_final.gds
 ## License
 
 This project is licensed under the **Apache License 2.0**.
+
