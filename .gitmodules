@@ -1,0 +1,6 @@
+[submodule "OpenROAD-flow-scripts"]
+	path = OpenROAD-flow-scripts
+	url = https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
+[submodule "IHP-Open-PDK"]
+	path = IHP-Open-PDK
+	url = https://github.com/IHP-GmbH/IHP-Open-PDK.git
